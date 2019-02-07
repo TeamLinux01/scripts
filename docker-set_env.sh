@@ -2,6 +2,7 @@
 export email_address='email@company.non'
 export email_password='email_password_change_me'
 export GID='1000'
+export host_ip='0.0.0.0'
 export hostname='localhost'
 export mysql_password='mysql_password_change_me'
 export mysql_root_password='mysql_root_password_change_me'
@@ -15,6 +16,7 @@ echo -e "Set these variables for docker environments:
 email_address: $email_address
 email_password: $email_password
 GID: $GID
+host_ip: $host_ip
 hostname: $hostname
 mysql_password: $mysql_password
 mysql_root_password: $mysql_root_password
