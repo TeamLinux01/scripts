@@ -5,6 +5,7 @@ export GID='1000'
 export hostname='localhost'
 export mysql_password='mysql_password_change_me'
 export mysql_root_password='mysql_root_password_change_me'
+export pihole_ip='127.0.0.1'
 export smbpassword='smbpassword_change_me'
 export smbuser='user'
 export smtp_host='email.hostname'
@@ -17,6 +18,7 @@ GID: $GID
 hostname: $hostname
 mysql_password: $mysql_password
 mysql_root_password: $mysql_root_password
+pihole_ip: $pihole_ip
 smbpassword: $smbpassword
 smbuser: $smbuser
 smtp_host: $smtp_host
