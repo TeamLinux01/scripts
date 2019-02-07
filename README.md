@@ -12,11 +12,11 @@ Remember to stop, rm and recreate containers that have a new imaged pulled.
 
 Used to create a new rsa 4096bit key file for ssh.
 
-* ./create_sshkey_for_service.sh "*Comment for key*" *filename*
+* ./create_sshkey_for_service.sh *server-hostname* *username*
 
-* create or add the following to ~/.ssh/config file:
+* The script will create the ssl-key in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
 
-  * Host *server-name*
-  * HostName *server-name*
-  * User *user-name*
-  * IdentityFile ~/.ssh/*filename*
+  * Host *server-hostname*
+  * HostName *server-hostname*
+  * User *username*
+  * IdentityFile ~/.ssh/*ssl-key*
