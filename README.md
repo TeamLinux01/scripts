@@ -25,4 +25,6 @@ Remember to stop, rm and recreate containers that have a new imaged pulled.
 
 Used to set enviromentable variables for docker-compose projects
 
-* ./docker-set_env.sh
+* Copy the docker-set_env.sh to the folder above the docker projects
+* Edit the docker-set_env.sh to have the proper settings, then run the script for the docker project's folder
+  * ../docker-set_env.sh
