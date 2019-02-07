@@ -13,3 +13,10 @@ Remember to stop, rm and recreate containers that have a new imaged pulled.
 Used to create a new rsa 4096bit key file for ssh.
 
 * ./create_sshkey_for_service.sh "*Comment for key*" *filename*
+
+* create or add the following to ~/.ssh/config file:
+
+  * Host *server-name*
+  * HostName *server-name*
+  * User *user-name*
+  * IdentityFile ~/.ssh/*filename*
