@@ -6,6 +6,8 @@ export host_ip='0.0.0.0'
 export hostname='localhost'
 export mysql_password='mysql_password_change_me'
 export mysql_root_password='mysql_root_password_change_me'
+export netcache-dns_ip='127.0.0.1'
+export netcache-proxy_ip='120.0.0.1'
 export pihole_ip='127.0.0.1'
 export smbpassword='smbpassword_change_me'
 export smbuser='user'
@@ -20,6 +22,8 @@ host_ip: $host_ip
 hostname: $hostname
 mysql_password: $mysql_password
 mysql_root_password: $mysql_root_password
+netcache-dns_ip: $netcache-dns_ip
+netcache-proxy_ip: $netcache-proxy_ip
 pihole_ip: $pihole_ip
 smbpassword: $smbpassword
 smbuser: $smbuser
