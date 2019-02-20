@@ -36,3 +36,41 @@ Used to spin down docker-compose with enviromentable variables
 * Copy the docker-down_env.sh to the folder above the docker projects
 * Edit the docker-down_env.sh to have the proper settings, then run the script for the docker project's folder
   * ../docker-down_env.sh
+
+## Pop_OS_Setup.sh
+
+* Installs several applications and sets up fish shell as default. Tested on Pop!_OS 18.10
+  * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose Version* *Docker-Machine Version*
+* Amarok
+* Docker
+* Fish shell
+* ncdu
+* Timeshift backup
+* tree
+* SNAPs
+  * Discord
+  * LibreOffice
+  * Nextcloud client
+  * Spotify
+  * Telegram Desktop
+  * VLC
+  * Visual Studio Code
+    * Angular.ng-template
+    * EditorConfig.EditorConfig
+    * ban.spellright
+    * christian-kohler.path-intellisense
+    * DavidAnson.vscode-markdownlint
+    * dbaeumer.vscode-eslint
+    * eg2.tslint
+    * eg2.vscode-npm-script
+    * esbenp.prettier-vscode
+    * johnpapa.angular-essentials
+    * johnpapa.Angular2
+    * johnpapa.winteriscoming
+    * mikestead.dotenv
+    * msjsdiag.debugger-for-chrome
+    * natewallace.angular2-inline
+    * PeterJausovec.vscode-docker
+    * PKief.material-icon-theme
+    * yzane.markdown-pdf
+    * yzhang.markdown-all-in-one
