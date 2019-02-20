@@ -40,7 +40,7 @@ Used to spin down docker-compose with enviromentable variables
 ## Pop_OS_Setup.sh
 
 * Installs several applications and sets up fish shell as default. Tested on Pop!_OS 18.10
-  * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose Version* *Docker-Machine Version*
+  * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 * Amarok
 * Docker
 * Fish shell
