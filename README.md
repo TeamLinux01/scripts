@@ -74,3 +74,7 @@ Used to spin down docker-compose with enviromentable variables
     * PKief.material-icon-theme
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
+
+* Gnome Extentions to install afterwards:
+  * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
+  * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
