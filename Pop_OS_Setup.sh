@@ -104,6 +104,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension christian-kohler.path-intellisense';
   sudo -H -u $1 bash -c 'vscode --install-extension DavidAnson.vscode-markdownlint';
   sudo -H -u $1 bash -c 'vscode --install-extension dbaeumer.vscode-eslint';
+  sudo -H -u $1 bash -c 'vscode --install-extension eamodio.gitlens;
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.tslint';
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.vscode-npm-script';
   sudo -H -u $1 bash -c 'vscode --install-extension esbenp.prettier-vscode';
