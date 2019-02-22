@@ -101,7 +101,6 @@ else
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
   sudo -H -u $1 bash -c 'vscode --install-extension Angular.ng-template';
   sudo -H -u $1 bash -c 'vscode --install-extension EditorConfig.EditorConfig';
-  sudo -H -u $1 bash -c 'vscode --install-extension ban.spellright';
   sudo -H -u $1 bash -c 'vscode --install-extension christian-kohler.path-intellisense';
   sudo -H -u $1 bash -c 'vscode --install-extension DavidAnson.vscode-markdownlint';
   sudo -H -u $1 bash -c 'vscode --install-extension dbaeumer.vscode-eslint';
