@@ -57,10 +57,10 @@ Used to spin down docker-compose with enviromentable variables
   * Visual Studio Code
     * Angular.ng-template
     * EditorConfig.EditorConfig
-    * ban.spellright
     * christian-kohler.path-intellisense
     * DavidAnson.vscode-markdownlint
     * dbaeumer.vscode-eslint
+    * eamodio.gitlens
     * eg2.tslint
     * eg2.vscode-npm-script
     * esbenp.prettier-vscode
@@ -75,6 +75,15 @@ Used to spin down docker-compose with enviromentable variables
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
 
+* Firefox Extentions to install afterwards:
+  * [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
+  * [Github Repository Size](https://addons.mozilla.org/en-US/firefox/addon/github-repo-size/)
+  * [GNOME Shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
+  * [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
+  * [Octotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/)
+  * [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/)
+  * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+
 * Gnome Extentions to install afterwards:
-  * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
+  * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
