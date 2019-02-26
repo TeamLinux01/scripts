@@ -45,6 +45,7 @@ Used to spin down docker-compose with enviromentable variables
 * Docker
 * Fish shell
 * ncdu
+* pinentry-tty
 * Timeshift backup
 * tree
 * SNAPs
