@@ -46,7 +46,7 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, ncdu, Timeshift backup, tree and Snaps${NC}\n";
+  printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, ncdu, pinentry-tty, Timeshift backup, tree and Snaps${NC}\n";
   apt install -y \
     amarok \
     apt-transport-https \
@@ -58,6 +58,7 @@ else
     fish \
     gnupg-agent \
     ncdu \
+    pinentry-tty \
     timeshift \
     tree \
     snapd \
@@ -97,6 +98,13 @@ else
 
   printf "${GREEN}Installing Spotify (SNAP).${NC}\n";
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+  printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
+  sudo -H -u $1 bash -c 'echo "set -xU GPG_TTY (tty)" >> ~/.config/fish/config.fish';
+  sudo -H -u $1 bash -c 'echo -e "function git_upstream\n\tgit fetch upstream;\ngit checkout master;\ngit merge upstream/master;\ngit push;\nend" > ~/.config/fish/functions/git_upstream.fish';
+  sudo -H -u $1 bash -c 'echo -e "function update\n\t~/Nextcloud/git/scripts/docker-images_updater.sh\nsudo apt update\nand sudo apt dist-upgrade\nend" > ~/.config/fish/functions/update.fish';
+  printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
 
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
   sudo -H -u $1 bash -c 'vscode --install-extension Angular.ng-template';
