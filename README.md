@@ -23,7 +23,7 @@ Remember to stop, rm and recreate containers that have a new imaged pulled.
 
 ## docker-up_env.sh
 
-Used to set enviromentable variables for docker-compose projects
+Used to set environmental variables for docker-compose projects
 
 * Copy the docker-up_env.sh to the folder above the docker projects
 * Edit the docker-up_env.sh to have the proper settings, then run the script for the docker project's folder
@@ -31,7 +31,7 @@ Used to set enviromentable variables for docker-compose projects
 
 ## docker-down_env.sh
 
-Used to spin down docker-compose with enviromentable variables
+Used to spin down docker-compose with environmental variables
 
 * Copy the docker-down_env.sh to the folder above the docker projects
 * Edit the docker-down_env.sh to have the proper settings, then run the script for the docker project's folder
@@ -76,7 +76,7 @@ Used to spin down docker-compose with enviromentable variables
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
 
-* Firefox Extentions to install afterwards:
+* Firefox Extensions to install afterwards:
   * [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
   * [Github Repository Size](https://addons.mozilla.org/en-US/firefox/addon/github-repo-size/)
   * [GNOME Shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
@@ -85,6 +85,7 @@ Used to spin down docker-compose with enviromentable variables
   * [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/)
   * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 
-* Gnome Extentions to install afterwards:
+* Gnome Extensions to install afterwards:
+  * [AlternateTab by fmuellner](https://extensions.gnome.org/extension/15/alternatetab/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
