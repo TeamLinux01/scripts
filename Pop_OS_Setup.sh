@@ -125,6 +125,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension natewallace.angular2-inline';
   sudo -H -u $1 bash -c 'vscode --install-extension PeterJausovec.vscode-docker';
   sudo -H -u $1 bash -c 'vscode --install-extension PKief.material-icon-theme';
+  sudo -H -u $1 bash -c 'vscode --install-extension streetsidesoftware.code-spell-checker';
   sudo -H -u $1 bash -c 'vscode --install-extension yzane.markdown-pdf';
   sudo -H -u $1 bash -c 'vscode --install-extension yzhang.markdown-all-in-one';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
