@@ -102,7 +102,7 @@ else
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'echo "set -xU GPG_TTY (tty)" >> ~/.config/fish/config.fish';
   sudo -H -u $1 bash -c 'echo -e "function git_upstream\n\tgit fetch upstream;\ngit checkout master;\ngit merge upstream/master;\ngit push;\nend" > ~/.config/fish/functions/git_upstream.fish';
-  sudo -H -u $1 bash -c 'echo -e "function update\n\t~/Nextcloud/git/scripts/docker-images_updater.sh\nsudo apt update\nand sudo apt dist-upgrade\nend" > ~/.config/fish/functions/update.fish';
+  sudo -H -u $1 bash -c 'echo -e "function update\n\tsudo apt update\nand sudo apt dist-upgrade\nend" > ~/.config/fish/functions/update.fish';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
 
@@ -120,6 +120,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.Angular2';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.winteriscoming';
   sudo -H -u $1 bash -c 'vscode --install-extension mikestead.dotenv';
+  sudo -H -u $1 bash -c 'vscode --install-extension ms-vsliveshare.vsliveshare';
   sudo -H -u $1 bash -c 'vscode --install-extension msjsdiag.debugger-for-chrome';
   sudo -H -u $1 bash -c 'vscode --install-extension natewallace.angular2-inline';
   sudo -H -u $1 bash -c 'vscode --install-extension PeterJausovec.vscode-docker';
