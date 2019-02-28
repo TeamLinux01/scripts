@@ -89,6 +89,12 @@ else
   printf "${GREEN}Installing LibreOffice (SNAP).${NC}\n";
   snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Installing OBS Studio (SNAP).${NC}\n";
+  snap install obs-studio \
+    && snap connect obs-studio:removable-media \
+    && snap connect obs-studio:camera \
+    && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing Telegram Desktop (SNAP).${NC}\n";
   snap install telegram-desktop && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 

@@ -52,6 +52,7 @@ Used to spin down docker-compose with environmental variables
   * Discord
   * LibreOffice
   * Nextcloud client
+  * OBS Studio
   * Spotify
   * Telegram Desktop
   * VLC
