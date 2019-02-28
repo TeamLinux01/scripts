@@ -1,8 +1,10 @@
 #!/bin/bash
-  GREEN='\033[0;32m';
-  LGREEN='\033[1;32m';
-  RED='\033[0;31m';
-  NC='\033[0m'; #No Color
+
+GREEN='\033[0;32m';
+LGREEN='\033[1;32m';
+RED='\033[0;31m';
+NC='\033[0m'; #No Color
+
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:\nsudo Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}\n \
     ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}\n \
