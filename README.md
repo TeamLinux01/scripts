@@ -17,25 +17,23 @@ Used to create a new rsa 4096bit key file for ssh.
 
 Used to pull all images installed on a machine and then ask user to prune unused images.
 
-Remember to stop, rm and recreate containers that have a new imaged pulled.
+Remember to stop, rm and re-create containers that have a new imaged pulled.
 
 * ./docker-images-updater.sh
 
-## docker-up_env.sh
+## dc_up.sh
 
-Used to set environmental variables for docker-compose projects
+Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled
 
-* Copy the docker-up_env.sh to the folder above the docker projects
-* Edit the docker-up_env.sh to have the proper settings, then run the script for the docker project's folder
-  * ../docker-up_env.sh
+* Runs docker-compose up -d --build
+  * ../dc_up.sh
 
-## docker-down_env.sh
+## dc_down.sh
 
-Used to spin down docker-compose with environmental variables
+Used to spin down docker containers using docker-compose
 
-* Copy the docker-down_env.sh to the folder above the docker projects
-* Edit the docker-down_env.sh to have the proper settings, then run the script for the docker project's folder
-  * ../docker-down_env.sh
+* Runs docker-compose down, you can supply an argument, such as -v to remove volumes
+  * ../dc_down.sh
 
 ## Pop_OS_Setup.sh
 
