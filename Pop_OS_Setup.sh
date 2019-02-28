@@ -1,15 +1,15 @@
 #!/bin/bash
-if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
-  echo Usage is .sudo /setup.sh '$USER' vCompose vMachine;
-  echo vCompose format: 1.23.2;
-  echo vMachine format: 0.16.1;
-  echo Please run as root;
-  exit
-else
   GREEN='\033[0;32m';
   LGREEN='\033[1;32m';
   RED='\033[0;31m';
   NC='\033[0m'; #No Color
+if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
+  printf "Usage:\nsudo Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}\n \
+    ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}\n \
+    ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}\n \
+    Please run as ${RED}root${NC}";
+  exit
+else
   PASS="setup" #Used for looping until password is entered correctly for chsh.
 
   printf "${GREEN}Adding $1 to sudoers with no password required.${NC}\n";
@@ -82,7 +82,7 @@ else
 
   printf "${GREEN}Installing Nextcloud client (SNAP).${NC}\n";
   snap install nextcloud-client \
-    &&snap connect nextcloud-client:password-manager-service && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    && snap connect nextcloud-client:password-manager-service && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing LibreOffice (SNAP).${NC}\n";
   snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
