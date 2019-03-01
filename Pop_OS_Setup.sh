@@ -6,10 +6,10 @@ RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
-  printf "Usage:\nsudo Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}\n \
+  printf "Usage:\nsudo ./Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}\n \
     ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}\n \
     ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}\n \
-    Please run as ${RED}root${NC}";
+    Please run as ${RED}root${NC}\n";
   exit
 else
   PASS="setup" #Used for looping until password is entered correctly for chsh.
@@ -108,6 +108,7 @@ else
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
+  sudo -H -u $1 bash -c 'touch ~/.config/fish/config.fish ~/.config/fish/functions/git_upstream.fish ~/.config/fish/functions/update.fish';
   sudo -H -u $1 bash -c 'echo "set -xU GPG_TTY (tty)" >> ~/.config/fish/config.fish';
   sudo -H -u $1 bash -c 'echo -e "function git_upstream\n\tgit fetch upstream;\ngit checkout master;\ngit merge upstream/master;\ngit push;\nend" > ~/.config/fish/functions/git_upstream.fish';
   sudo -H -u $1 bash -c 'echo -e "function update\n\tsudo apt update\nand sudo apt dist-upgrade\nend" > ~/.config/fish/functions/update.fish';

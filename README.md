@@ -21,19 +21,26 @@ Remember to stop, rm and re-create containers that have a new imaged pulled.
 
 * ./docker-images-updater.sh
 
+## docker_sync_tag.sh
+
+Used to update an image tag to point to a local registry, then push that image to that registry.
+
+* ./docker_sync_tag.sh *image-name*:*tag*
+  * Copy the .env.example to .env and change its value to your registry server's host-name.
+
 ## dc_up.sh
 
 Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled
 
 * Runs docker-compose up -d --build
-  * ../dc_up.sh
+  * ./dc_up.sh
 
 ## dc_down.sh
 
 Used to spin down docker containers using docker-compose
 
 * Runs docker-compose down, you can supply an argument, such as -v to remove volumes
-  * ../dc_down.sh
+  * ./dc_down.sh
 
 ## Pop_OS_Setup.sh
 
