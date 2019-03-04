@@ -30,17 +30,29 @@ Used to update an image tag to point to a local registry, then push that image t
 
 ## dc_up.sh
 
-Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled
+Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled.
 
 * Runs docker-compose up -d --build
   * ./dc_up.sh
 
 ## dc_down.sh
 
-Used to spin down docker containers using docker-compose
+Used to spin down docker containers using docker-compose.
 
 * Runs docker-compose down, you can supply an argument, such as -v to remove volumes
   * ./dc_down.sh
+
+## install_docker-compose.sh
+
+Used to install/update docker-compose.
+
+* sudo ./install_docker-compose.sh *version-number*
+
+## install_docker-machine.sh
+
+Used to install/update docker-machine.
+
+* sudo ./install_docker-machine.sh *version-number*
 
 ## Pop_OS_Setup.sh
 

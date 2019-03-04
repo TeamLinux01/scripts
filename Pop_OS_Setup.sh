@@ -69,12 +69,12 @@ else
   printf "${GREEN}Adding $1 to group docker.${NC}\n";
   usermod -aG docker $1 && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Docker Compose.${NC}\n";
+  printf "${GREEN}Installing Docker Compose $2.${NC}\n";
   curl -L https://github.com/docker/compose/releases/download/$2/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose && \
     chmod +x /tmp/docker-compose && \
     cp /tmp/docker-compose /usr/local/bin/docker-compose && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Docker Machine.${NC}\n";
+  printf "${GREEN}Installing Docker Machine $3.${NC}\n";
   curl -L https://github.com/docker/machine/releases/download/v$3/docker-machine-`uname -s`-`uname -m` > /tmp/docker-machine && \
     chmod +x /tmp/docker-machine && \
     cp /tmp/docker-machine /usr/local/bin/docker-machine && printf "${LGREEN}DONE${NC}\n" && sleep 5;
