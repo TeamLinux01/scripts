@@ -6,9 +6,10 @@ RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
-  printf "Usage:\nsudo ./Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}\n \
-    ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}\n \
-    ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}\n \
+  printf "Usage:
+    sudo ./Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}
+    ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}
+    ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}
     Please run as ${RED}root${NC}\n";
   exit
 else

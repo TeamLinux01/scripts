@@ -42,6 +42,12 @@ Used to spin down docker containers using docker-compose.
 * Runs docker-compose down, you can supply an argument, such as -v to remove volumes
   * ./dc_down.sh
 
+## install_docker-ce.sh
+
+Used to install docker community edition.
+
+* sudo ./install_docker-ce.sh $USER
+
 ## install_docker-compose.sh
 
 Used to install/update docker-compose.

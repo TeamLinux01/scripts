@@ -6,8 +6,9 @@ RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ "$EUID" -ne 0 ];then
-  printf "Usage:\nsudo ./install_docker-compose.sh ${GREEN}vCompose${NC}\n \
-    ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}\n \
+  printf "Usage:
+    sudo ./install_docker-compose.sh ${GREEN}vCompose${NC}
+    ${GREEN}vCompose${NC} format: ${LGREEN}1.23.2${NC}
     Please run as ${RED}root${NC}\n";
   exit
 else
