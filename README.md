@@ -93,6 +93,7 @@ Used to install/update docker-machine.
     * johnpapa.angular-essentials
     * johnpapa.Angular2
     * johnpapa.winteriscoming
+    * medo64.render-crlf
     * mikestead.dotenv
     * msjsdiag.debugger-for-chrome
     * natewallace.angular2-inline

@@ -130,6 +130,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.angular-essentials';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.Angular2';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.winteriscoming';
+  sudo -H -u $1 bash -c 'vscode --install-extension medo64.render-crlf';
   sudo -H -u $1 bash -c 'vscode --install-extension mikestead.dotenv';
   sudo -H -u $1 bash -c 'vscode --install-extension ms-vsliveshare.vsliveshare';
   sudo -H -u $1 bash -c 'vscode --install-extension msjsdiag.debugger-for-chrome';
