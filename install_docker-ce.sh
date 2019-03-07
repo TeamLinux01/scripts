@@ -11,6 +11,9 @@ if [ -z "$1" ] || [ "$EUID" -ne 0 ];then
     Please run as ${RED}root${NC}\n";
   exit
 else
+  printf "${GREEN}Installing curl.${NC}\n";
+  apt update && apt install -y curl && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Adding Docker Repo key.${NC}\n";
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
@@ -20,15 +23,11 @@ else
     $(lsb_release -cs) \
     stable" && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Checking repositories for latest software.${NC}\n";
-  apt update && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
   printf "${GREEN}Installing Docker Community Edtion.${NC}\n";
   apt install -y \
     apt-transport-https \
     ca-certificates \
     containerd.io \
-    curl \
     docker-ce \
     docker-ce-cli \
     gnupg-agent \

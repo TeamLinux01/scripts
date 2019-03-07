@@ -44,7 +44,7 @@ Used to spin down docker containers using docker-compose.
 
 ## install_docker-ce.sh
 
-Used to install docker community edition.
+Used to install docker community edition on an Ubuntu based system.
 
 * sudo ./install_docker-ce.sh $USER
 
