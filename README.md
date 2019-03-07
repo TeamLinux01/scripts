@@ -61,6 +61,7 @@ Used to install/update docker-machine.
 * Amarok
 * Docker
 * Fish shell
+* gparted
 * ncdu
 * pinentry-tty
 * Timeshift backup
