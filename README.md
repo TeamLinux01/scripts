@@ -114,4 +114,5 @@ Used to install/update docker-machine.
 * Gnome Extensions to install afterwards:
   * [AlternateTab by fmuellner](https://extensions.gnome.org/extension/15/alternatetab/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
+  * [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
   * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
