@@ -28,6 +28,12 @@ Used to update an image tag to point to a local registry, then push that image t
 * ./docker_sync_tag.sh *image-name*:*tag*
   * Copy the .env.example to .env and change its value to your registry server's host-name.
 
+## docker_run.sh
+
+Run a docker container with audio/video capabilites. Removes the container on exit.
+
+* ./docker_run.sh *image-name*:*tag*
+
 ## dc_up.sh
 
 Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled.
