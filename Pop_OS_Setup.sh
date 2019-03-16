@@ -52,6 +52,7 @@ else
   printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, gparted, ncdu, pinentry-tty, Timeshift backup, tree and Snaps${NC}\n";
   apt install -y \
     amarok \
+    aptitude \
     apt-transport-https \
     ca-certificates \
     containerd.io \
@@ -112,10 +113,8 @@ else
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'touch ~/.config/fish/config.fish ~/.config/fish/functions/git_upstream.fish ~/.config/fish/functions/update.fish';
   sudo -H -u $1 bash -c 'echo "set -xU GPG_TTY (tty)" >> ~/.config/fish/config.fish';
-  sudo -H -u $1 bash -c 'echo -e "function git_upstream\n\tgit fetch upstream;\ngit checkout master;\ngit merge upstream/master;\ngit push;\nend" > ~/.config/fish/functions/git_upstream.fish';
-  sudo -H -u $1 bash -c 'echo -e "function update\n\tsudo apt update\nand sudo apt dist-upgrade\nend" > ~/.config/fish/functions/update.fish';
+  sudo -H -u $1 bash -c 'echo -e "function update\n\tsudo aptitude update\nand sudo aptitude safe-upgrade\nend" > ~/.config/fish/functions/update.fish';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
 
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
   sudo -H -u $1 bash -c 'vscode --install-extension Angular.ng-template';
@@ -127,6 +126,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.tslint';
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.vscode-npm-script';
   sudo -H -u $1 bash -c 'vscode --install-extension esbenp.prettier-vscode';
+  sudo -H -u $1 bash -c 'vscode --install-extension jdforsythe.add-new-line-to-files';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.angular-essentials';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.Angular2';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.winteriscoming';
@@ -138,6 +138,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension PeterJausovec.vscode-docker';
   sudo -H -u $1 bash -c 'vscode --install-extension PKief.material-icon-theme';
   sudo -H -u $1 bash -c 'vscode --install-extension streetsidesoftware.code-spell-checker';
+  sudo -H -u $1 bash -c 'vscode --install-extension tyriar.sort-lines';
   sudo -H -u $1 bash -c 'vscode --install-extension yzane.markdown-pdf';
   sudo -H -u $1 bash -c 'vscode --install-extension yzhang.markdown-all-in-one';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;

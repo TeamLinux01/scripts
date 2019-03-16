@@ -71,6 +71,7 @@ Used to install/update docker-machine.
 * Installs several applications and sets up fish shell as default. Tested on Pop!_OS 18.10
   * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 * Amarok
+* aptitude
 * Docker
 * Fish shell
 * gparted
@@ -96,15 +97,19 @@ Used to install/update docker-machine.
     * eg2.tslint
     * eg2.vscode-npm-script
     * esbenp.prettier-vscode
+    * jdforsythe.add-new-line-to-files
     * johnpapa.angular-essentials
     * johnpapa.Angular2
     * johnpapa.winteriscoming
     * medo64.render-crlf
     * mikestead.dotenv
+    * ms-vsliveshare.vsliveshare
     * msjsdiag.debugger-for-chrome
     * natewallace.angular2-inline
     * PeterJausovec.vscode-docker
     * PKief.material-icon-theme
+    * streetsidesoftware.code-spell-checker
+    * tyriar.sort-lines
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
 
