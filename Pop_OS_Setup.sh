@@ -111,9 +111,7 @@ else
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
-  sudo -H -u $1 bash -c 'touch ~/.config/fish/config.fish ~/.config/fish/functions/git_upstream.fish ~/.config/fish/functions/update.fish';
-  sudo -H -u $1 bash -c 'echo "set -xU GPG_TTY (tty)" >> ~/.config/fish/config.fish';
-  sudo -H -u $1 bash -c 'echo -e "function update\n\tsudo aptitude update\nand sudo aptitude safe-upgrade\nend" > ~/.config/fish/functions/update.fish';
+  sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
