@@ -117,6 +117,7 @@ else
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
+  sudo -H -u $1 bash -c 'vscode --install-extension alefragnani.bookmarks';
   sudo -H -u $1 bash -c 'vscode --install-extension Angular.ng-template';
   sudo -H -u $1 bash -c 'vscode --install-extension EditorConfig.EditorConfig';
   sudo -H -u $1 bash -c 'vscode --install-extension christian-kohler.path-intellisense';
@@ -126,6 +127,8 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.tslint';
   sudo -H -u $1 bash -c 'vscode --install-extension eg2.vscode-npm-script';
   sudo -H -u $1 bash -c 'vscode --install-extension esbenp.prettier-vscode';
+  sudo -H -u $1 bash -c 'vscode --install-extension gregorbiswanger.json2ts';
+  sudo -H -u $1 bash -c 'vscode --install-extension infinity1207.angular2-switcher';
   sudo -H -u $1 bash -c 'vscode --install-extension jdforsythe.add-new-line-to-files';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.angular-essentials';
   sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.Angular2';
@@ -137,6 +140,7 @@ else
   sudo -H -u $1 bash -c 'vscode --install-extension natewallace.angular2-inline';
   sudo -H -u $1 bash -c 'vscode --install-extension PeterJausovec.vscode-docker';
   sudo -H -u $1 bash -c 'vscode --install-extension PKief.material-icon-theme';
+  sudo -H -u $1 bash -c 'vscode --install-extension spywhere.guides';
   sudo -H -u $1 bash -c 'vscode --install-extension streetsidesoftware.code-spell-checker';
   sudo -H -u $1 bash -c 'vscode --install-extension tyriar.sort-lines';
   sudo -H -u $1 bash -c 'vscode --install-extension yzane.markdown-pdf';

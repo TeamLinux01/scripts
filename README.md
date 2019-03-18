@@ -88,6 +88,7 @@ Used to install/update docker-machine.
   * Telegram Desktop
   * VLC
   * Visual Studio Code
+    * alefragnani.bookmarks
     * Angular.ng-template
     * EditorConfig.EditorConfig
     * christian-kohler.path-intellisense
@@ -97,6 +98,8 @@ Used to install/update docker-machine.
     * eg2.tslint
     * eg2.vscode-npm-script
     * esbenp.prettier-vscode
+    * gregorbiswanger.json2ts
+    * infinity1207.angular2-switcher
     * jdforsythe.add-new-line-to-files
     * johnpapa.angular-essentials
     * johnpapa.Angular2
@@ -108,6 +111,7 @@ Used to install/update docker-machine.
     * natewallace.angular2-inline
     * PeterJausovec.vscode-docker
     * PKief.material-icon-theme
+    * spywhere.guides
     * streetsidesoftware.code-spell-checker
     * tyriar.sort-lines
     * yzane.markdown-pdf
