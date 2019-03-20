@@ -82,6 +82,7 @@ Used to install/update docker-machine.
 * SNAPs
   * Discord
   * LibreOffice
+  * Log File Navigator
   * Nextcloud client
   * OBS Studio
   * Spotify

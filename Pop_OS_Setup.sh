@@ -92,6 +92,9 @@ else
   printf "${GREEN}Installing LibreOffice (SNAP).${NC}\n";
   snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Installing Log File Navigator (SNAP).${NC}\n";
+  snap install lnav && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing OBS Studio (SNAP).${NC}\n";
   snap install obs-studio \
     && snap connect obs-studio:removable-media \
