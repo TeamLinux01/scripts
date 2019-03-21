@@ -62,7 +62,9 @@ else
     fish \
     gnupg-agent \
     gparted \
+    htop \
     ncdu \
+    nload \
     pinentry-tty \
     timeshift \
     tree \

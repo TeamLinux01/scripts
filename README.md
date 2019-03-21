@@ -75,7 +75,9 @@ Used to install/update docker-machine.
 * Docker
 * Fish shell
 * gparted
+* htop
 * ncdu
+* nload
 * pinentry-tty
 * Timeshift backup
 * tree
@@ -131,4 +133,5 @@ Used to install/update docker-machine.
   * [AlternateTab by fmuellner](https://extensions.gnome.org/extension/15/alternatetab/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   * [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
+  * [Hide Top Bar by tuxor1337](https://extensions.gnome.org/extension/545/hide-top-bar/)
   * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
