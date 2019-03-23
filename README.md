@@ -79,6 +79,7 @@ Used to install/update docker-machine.
 * ncdu
 * nload
 * pinentry-tty
+* qemu-efi
 * Timeshift backup
 * tree
 * SNAPs
@@ -119,6 +120,7 @@ Used to install/update docker-machine.
     * tyriar.sort-lines
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
+* virt-manager
 
 * Firefox Extensions to install afterwards:
   * [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
