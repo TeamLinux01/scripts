@@ -86,6 +86,9 @@ else
     chmod +x /tmp/docker-machine && \
     cp /tmp/docker-machine /usr/local/bin/docker-machine && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Updating system.${NC}\n";
+  aptitude update && aptitude safe-upgrade && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing Visual Studio Code (SNAP).${NC}\n";
   snap install vscode --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
