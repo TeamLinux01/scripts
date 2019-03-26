@@ -120,6 +120,7 @@ Used to install/update docker-machine.
     * tyriar.sort-lines
     * yzane.markdown-pdf
     * yzhang.markdown-all-in-one
+* Solaar
 * virt-manager
 
 * Firefox Extensions to install afterwards:
