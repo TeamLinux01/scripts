@@ -49,7 +49,7 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, gparted, ncdu, pinentry-tty, qemu-efi, Timeshift backup, tree, Snaps, Solaar unifying receiver and virt-manger${NC}\n";
+  printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, GameMode, gparted, ncdu, pinentry-tty, qemu-efi, Timeshift backup, tree, Snaps, Solaar unifying receiver and virt-manger${NC}\n";
   apt install -y \
     amarok \
     aptitude \
@@ -60,6 +60,7 @@ else
     docker-ce \
     docker-ce-cli \
     fish \
+    gamemode \
     gnupg-agent \
     gparted \
     htop \

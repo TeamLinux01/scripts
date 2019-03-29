@@ -74,6 +74,7 @@ Used to install/update docker-machine.
 * aptitude
 * Docker
 * Fish shell
+* GameMode
 * gparted
 * htop
 * ncdu
