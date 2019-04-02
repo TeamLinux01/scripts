@@ -123,6 +123,8 @@ Used to install/update docker-machine.
     * yzhang.markdown-all-in-one
 * Solaar
 * virt-manager
+* zfs-initramfs
+* zfsutils-linux
 
 * Firefox Extensions to install afterwards:
   * [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
