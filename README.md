@@ -85,10 +85,15 @@ Used to install/update docker-machine.
 * tree
 * SNAPs
   * Discord
+  * Gimp
+  * Inkscape
+  * Krita
   * LibreOffice
   * Log File Navigator
   * Nextcloud client
   * OBS Studio
+  * Shotcut
+  * Skrooge
   * Spotify
   * Telegram Desktop
   * VLC

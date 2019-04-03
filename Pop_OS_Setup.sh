@@ -118,11 +118,26 @@ else
   printf "${GREEN}Installing Discord (SNAP).${NC}\n";
   snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Installing Gimp (SNAP).${NC}\n";
+  snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+  printf "${GREEN}Installing Inkscape (SNAP).${NC}\n";
+  snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+  printf "${GREEN}Installing Krita (SNAP).${NC}\n";
+  snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+  printf "${GREEN}Installing Shotcut (SNAP).${NC}\n";
+  snap install shotcut --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing VLC (SNAP).${NC}\n";
   snap install vlc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Spotify (SNAP).${NC}\n";
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+    printf "${GREEN}Installing Skrooge (SNAP).${NC}\n";
+  snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';
