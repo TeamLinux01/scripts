@@ -86,6 +86,7 @@ Used to install/update docker-machine.
 * SNAPs
   * Discord
   * Gimp
+  * Gnome Tweaks
   * Inkscape
   * Krita
   * LibreOffice
@@ -94,6 +95,7 @@ Used to install/update docker-machine.
   * OBS Studio
   * Shotcut
   * Skrooge
+  * SNAP Store
   * Spotify
   * Telegram Desktop
   * VLC

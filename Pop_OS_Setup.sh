@@ -61,6 +61,7 @@ else
     docker-ce-cli \
     fish \
     gamemode \
+    gnome-tweak-tool \
     gnupg-agent \
     gparted \
     htop \
@@ -136,8 +137,11 @@ else
   printf "${GREEN}Installing Spotify (SNAP).${NC}\n";
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-    printf "${GREEN}Installing Skrooge (SNAP).${NC}\n";
+  printf "${GREEN}Installing Skrooge (SNAP).${NC}\n";
   snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
+  printf "${GREEN}Installing SNAP Store (SNAP).${NC}\n";
+  snap install snap-store && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';
