@@ -94,7 +94,7 @@ else
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Visual Studio Code (SNAP).${NC}\n";
-  snap install vscode --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  snap install code --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Nextcloud client (SNAP).${NC}\n";
   snap install nextcloud-client \
@@ -144,34 +144,34 @@ else
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing VS Code extensions.${NC}\n";
-  sudo -H -u $1 bash -c 'vscode --install-extension alefragnani.bookmarks';
-  sudo -H -u $1 bash -c 'vscode --install-extension Angular.ng-template';
-  sudo -H -u $1 bash -c 'vscode --install-extension EditorConfig.EditorConfig';
-  sudo -H -u $1 bash -c 'vscode --install-extension christian-kohler.path-intellisense';
-  sudo -H -u $1 bash -c 'vscode --install-extension DavidAnson.vscode-markdownlint';
-  sudo -H -u $1 bash -c 'vscode --install-extension dbaeumer.vscode-eslint';
-  sudo -H -u $1 bash -c 'vscode --install-extension eamodio.gitlens';
-  sudo -H -u $1 bash -c 'vscode --install-extension eg2.tslint';
-  sudo -H -u $1 bash -c 'vscode --install-extension eg2.vscode-npm-script';
-  sudo -H -u $1 bash -c 'vscode --install-extension esbenp.prettier-vscode';
-  sudo -H -u $1 bash -c 'vscode --install-extension gregorbiswanger.json2ts';
-  sudo -H -u $1 bash -c 'vscode --install-extension infinity1207.angular2-switcher';
-  sudo -H -u $1 bash -c 'vscode --install-extension jdforsythe.add-new-line-to-files';
-  sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.angular-essentials';
-  sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.Angular2';
-  sudo -H -u $1 bash -c 'vscode --install-extension johnpapa.winteriscoming';
-  sudo -H -u $1 bash -c 'vscode --install-extension medo64.render-crlf';
-  sudo -H -u $1 bash -c 'vscode --install-extension mikestead.dotenv';
-  sudo -H -u $1 bash -c 'vscode --install-extension ms-vsliveshare.vsliveshare';
-  sudo -H -u $1 bash -c 'vscode --install-extension msjsdiag.debugger-for-chrome';
-  sudo -H -u $1 bash -c 'vscode --install-extension natewallace.angular2-inline';
-  sudo -H -u $1 bash -c 'vscode --install-extension PeterJausovec.vscode-docker';
-  sudo -H -u $1 bash -c 'vscode --install-extension PKief.material-icon-theme';
-  sudo -H -u $1 bash -c 'vscode --install-extension spywhere.guides';
-  sudo -H -u $1 bash -c 'vscode --install-extension streetsidesoftware.code-spell-checker';
-  sudo -H -u $1 bash -c 'vscode --install-extension tyriar.sort-lines';
-  sudo -H -u $1 bash -c 'vscode --install-extension yzane.markdown-pdf';
-  sudo -H -u $1 bash -c 'vscode --install-extension yzhang.markdown-all-in-one';
+  sudo -H -u $1 bash -c 'code --install-extension alefragnani.bookmarks';
+  sudo -H -u $1 bash -c 'code --install-extension Angular.ng-template';
+  sudo -H -u $1 bash -c 'code --install-extension EditorConfig.EditorConfig';
+  sudo -H -u $1 bash -c 'code --install-extension christian-kohler.path-intellisense';
+  sudo -H -u $1 bash -c 'code --install-extension DavidAnson.vscode-markdownlint';
+  sudo -H -u $1 bash -c 'code --install-extension dbaeumer.vscode-eslint';
+  sudo -H -u $1 bash -c 'code --install-extension eamodio.gitlens';
+  sudo -H -u $1 bash -c 'code --install-extension eg2.tslint';
+  sudo -H -u $1 bash -c 'code --install-extension eg2.vscode-npm-script';
+  sudo -H -u $1 bash -c 'code --install-extension esbenp.prettier-vscode';
+  sudo -H -u $1 bash -c 'code --install-extension gregorbiswanger.json2ts';
+  sudo -H -u $1 bash -c 'code --install-extension infinity1207.angular2-switcher';
+  sudo -H -u $1 bash -c 'code --install-extension jdforsythe.add-new-line-to-files';
+  sudo -H -u $1 bash -c 'code --install-extension johnpapa.angular-essentials';
+  sudo -H -u $1 bash -c 'code --install-extension johnpapa.Angular2';
+  sudo -H -u $1 bash -c 'code --install-extension johnpapa.winteriscoming';
+  sudo -H -u $1 bash -c 'code --install-extension medo64.render-crlf';
+  sudo -H -u $1 bash -c 'code --install-extension mikestead.dotenv';
+  sudo -H -u $1 bash -c 'code --install-extension ms-vsliveshare.vsliveshare';
+  sudo -H -u $1 bash -c 'code --install-extension msjsdiag.debugger-for-chrome';
+  sudo -H -u $1 bash -c 'code --install-extension natewallace.angular2-inline';
+  sudo -H -u $1 bash -c 'code --install-extension PeterJausovec.vscode-docker';
+  sudo -H -u $1 bash -c 'code --install-extension PKief.material-icon-theme';
+  sudo -H -u $1 bash -c 'code --install-extension spywhere.guides';
+  sudo -H -u $1 bash -c 'code --install-extension streetsidesoftware.code-spell-checker';
+  sudo -H -u $1 bash -c 'code --install-extension tyriar.sort-lines';
+  sudo -H -u $1 bash -c 'code --install-extension yzane.markdown-pdf';
+  sudo -H -u $1 bash -c 'code --install-extension yzhang.markdown-all-in-one';
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting Fish Shell as default shell for $1.${NC}\n${LGREEN}Please Enter your password when prompted.${NC}\n${RED}System will Reboot afterwards.${NC}\n";
