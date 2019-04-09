@@ -148,6 +148,7 @@ Used to install/update docker-machine.
   * [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
   * [Hide Top Bar by tuxor1337](https://extensions.gnome.org/extension/545/hide-top-bar/)
   * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
+  * [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
   * [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
   * [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
