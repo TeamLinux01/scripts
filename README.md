@@ -130,6 +130,7 @@ Used to install/update docker-machine.
     * yzhang.markdown-all-in-one
 * Solaar
 * virt-manager
+* vulkan-utils
 * zfs-initramfs
 * zfsutils-linux
 

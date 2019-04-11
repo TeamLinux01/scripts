@@ -75,6 +75,7 @@ else
     solaar-gnome3 \
     software-properties-common \
     virt-manager \
+    vulkan-utils \
     zfs-initramfs \
     zfsutils-linux && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
