@@ -49,10 +49,10 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Amarok media player, Docker, Fish Shell, GameMode, gparted, ncdu, pinentry-tty, qemu-efi, Timeshift backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Audacious music player, Docker, Fish Shell, GameMode, gparted, ncdu, pinentry-tty, qemu-efi, Timeshift backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
   apt install -y \
-    amarok \
     aptitude \
+    audacious \
     apt-transport-https \
     ca-certificates \
     containerd.io \
@@ -95,50 +95,50 @@ else
   printf "${GREEN}Updating system.${NC}\n";
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Visual Studio Code (SNAP).${NC}\n";
+  printf "${GREEN}Installing Visual Studio Code IDE (SNAP).${NC}\n";
   snap install code --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Nextcloud client (SNAP).${NC}\n";
+  printf "${GREEN}Installing Nextcloud client backup and sync app (SNAP).${NC}\n";
   snap install nextcloud-client \
     && snap connect nextcloud-client:password-manager-service && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing LibreOffice (SNAP).${NC}\n";
+  printf "${GREEN}Installing LibreOffice document suite (SNAP).${NC}\n";
   snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Log File Navigator (SNAP).${NC}\n";
   snap install lnav && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing OBS Studio (SNAP).${NC}\n";
+  printf "${GREEN}Installing OBS Studio video capture and streaming app (SNAP).${NC}\n";
   snap install obs-studio \
     && snap connect obs-studio:removable-media \
     && snap connect obs-studio:camera \
     && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Telegram Desktop (SNAP).${NC}\n";
+  printf "${GREEN}Installing Telegram Desktop chat app (SNAP).${NC}\n";
   snap install telegram-desktop && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Discord (SNAP).${NC}\n";
+  printf "${GREEN}Installing Discord chat app (SNAP).${NC}\n";
   snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Gimp (SNAP).${NC}\n";
+  printf "${GREEN}Installing Gimp photo editor (SNAP).${NC}\n";
   snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Inkscape (SNAP).${NC}\n";
+  printf "${GREEN}Installing Inkscape graphic editor (SNAP).${NC}\n";
   snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Krita (SNAP).${NC}\n";
+  printf "${GREEN}Installing Krita drawing app (SNAP).${NC}\n";
   snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Shotcut (SNAP).${NC}\n";
+  printf "${GREEN}Installing Shotcut video editor (SNAP).${NC}\n";
   snap install shotcut --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing VLC (SNAP).${NC}\n";
+  printf "${GREEN}Installing VLC media player (SNAP).${NC}\n";
   snap install vlc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Spotify (SNAP).${NC}\n";
+  printf "${GREEN}Installing Spotify streaming music player (SNAP).${NC}\n";
   snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Skrooge (SNAP).${NC}\n";
+  printf "${GREEN}Installing Skrooge finance app (SNAP).${NC}\n";
   snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing SNAP Store (SNAP).${NC}\n";

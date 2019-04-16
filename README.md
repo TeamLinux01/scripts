@@ -70,8 +70,9 @@ Used to install/update docker-machine.
 
 * Installs several applications and sets up fish shell as default. Tested on Pop!_OS 18.10
   * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
-* Amarok
+
 * aptitude
+* Audacious
 * Docker
 * Fish shell
 * GameMode
