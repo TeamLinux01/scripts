@@ -12,9 +12,10 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-printf "${GREEN}Adding Timeshift Repo.${NC}\n";
-apt-add-repository -y -n ppa:teejee2008/ppa && apt update && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  printf "${GREEN}Adding Timeshift Repo.${NC}\n";
+  apt-add-repository -y -n ppa:teejee2008/ppa && apt update && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-printf "${GREEN}Installing Timeshift backup${NC}\n";
-apt install -y \
-  timeshift && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  printf "${GREEN}Installing Timeshift backup${NC}\n";
+  apt install -y \
+    timeshift && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+fi

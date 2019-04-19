@@ -12,5 +12,6 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-printf "${GREEN}Adding Git Repo${NC}\n";
-apt-add-repository -y ppa:git-core/ppa && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  printf "${GREEN}Adding Git Repo${NC}\n";
+  apt-add-repository -y ppa:git-core/ppa && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+fi
