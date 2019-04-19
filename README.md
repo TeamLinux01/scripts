@@ -165,3 +165,34 @@ Used to install/update docker-machine.
     * /etc/systemd/system.conf
     * /etc/systemd/user.conf
   * *ulimit -Hn* to check Esync file limit
+  * Gnome Tweaks:
+    * Desktop:
+      * Show Icons: **OFF**
+    * Top Bar:
+      * Application Menu: **OFF**
+      * *Clock* Weekday: **OFF**
+    * Windows Titlebars:
+      * *Titlebar Buttons* Maximize: **ON**
+      * *Titlebar Buttons* Minimize: **ON**
+      * *Titlebar Buttons* Placement: **Right**
+  * Settings:
+    * Appearance: 
+      * Dark Mode: **ON**
+      * Slim Mode: **ON**
+    * Notifications:
+      * Notification Popups: **OFF**
+    * Privacy:
+      * Screen Lock:
+        * Automatic Screen Lock: **OFF**
+    * Power:
+      * *Power Saving* Blank screen: **Never**
+    * Devices:
+      * Mouse & Touchpad:
+        * *Mouse* Natural Scrolling: **ON**
+        * *Touchpad* Natural Scrolling: **ON**
+        * *Touchpad* Tap to Click: **OFF**
+      * Removable Media:
+        * Never prompt or start programs on media insertion: **CHECKED**
+    * Details:
+      * Users:
+        * Automatic Login: **ON**
