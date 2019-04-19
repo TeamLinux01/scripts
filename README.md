@@ -148,6 +148,7 @@ Used to install/update docker-machine.
 
 * Gnome Extensions to install afterwards:
   * [AlternateTab by fmuellner](https://extensions.gnome.org/extension/15/alternatetab/)
+  * [cpufreq by konkor](https://extensions.gnome.org/extension/1082/cpufreq/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   * [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
   * [Hide Top Bar by tuxor1337](https://extensions.gnome.org/extension/545/hide-top-bar/)
