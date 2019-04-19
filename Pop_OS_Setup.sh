@@ -18,69 +18,35 @@ else
   printf "${GREEN}Adding $1 to sudoers with no password required.${NC}\n";
   echo "$1 ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/90-user-pop-os && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Removing LibreOffice so that it can be installed as a snap.${NC}\n";
-  apt purge -y libreoffice-calc \
-    libreoffice-common \
-    libreoffice-core \
-    libreoffice-draw \
-    libreoffice-impress \
-    libreoffice-math \
-    libreoffice-writer && sleep 5;
-  apt autoremove -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  ./Pop_OS_Setup/Removing_apps.sh
 
-  printf "${GREEN}Adding Docker Repo key.${NC}\n";
-  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  ./Pop_OS_Setup/Add_Docker.sh
 
-  printf "${GREEN}Adding Docker Repo.${NC}\n";
-  apt-add-repository -y -n \
-    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-    $(lsb_release -cs) \
-    stable" && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Adding Fish Shell Repo.${NC}\n";
-  apt-add-repository -y -n ppa:fish-shell/release-3 && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Adding Timeshift Repo.${NC}\n";
-  apt-add-repository -y -n ppa:teejee2008/ppa && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Adding Git Repo${NC}\n";
-  apt-add-repository -y ppa:git-core/ppa && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  ./Pop_OS_Setup/Add_Git_Repo.sh
 
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Audacious music player, Docker, Fish Shell, GameMode, gparted, ncdu, pinentry-tty, qemu-efi, Timeshift backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, ovmf, pinentry-tty, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
   apt install -y \
     aptitude \
     audacious \
-    apt-transport-https \
-    ca-certificates \
-    containerd.io \
-    curl \
-    docker-ce \
-    docker-ce-cli \
     fish \
     gamemode \
     gnome-tweak-tool \
-    gnupg-agent \
     gparted \
     htop \
     ncdu \
     nload \
+    ovmf \
     pinentry-tty \
-    qemu-efi \
-    timeshift \
     tree \
     snapd \
     solaar-gnome3 \
-    software-properties-common \
     virt-manager \
     vulkan-utils \
     zfs-initramfs \
     zfsutils-linux && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Adding $1 to group docker.${NC}\n";
-  usermod -aG docker $1 && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Docker Compose $2.${NC}\n";
   curl -L https://github.com/docker/compose/releases/download/$2/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose && \
@@ -95,60 +61,7 @@ else
   printf "${GREEN}Updating system.${NC}\n";
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Visual Studio Code IDE (SNAP).${NC}\n";
-  snap install code --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Nextcloud client backup and sync app (SNAP).${NC}\n";
-  snap install nextcloud-client \
-    && snap connect nextcloud-client:password-manager-service && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing LibreOffice document suite (SNAP).${NC}\n";
-  snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Log File Navigator (SNAP).${NC}\n";
-  snap install lnav && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing OBS Studio video capture and streaming app (SNAP).${NC}\n";
-  snap install obs-studio \
-    && snap connect obs-studio:removable-media \
-    && snap connect obs-studio:camera \
-    && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Telegram Desktop chat app (SNAP).${NC}\n";
-  snap install telegram-desktop && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Discord chat app (SNAP).${NC}\n";
-  snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Audacity audio editor (SNAP).${NC}\n";
-  snap install audacity && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Gimp photo editor (SNAP).${NC}\n";
-  snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Inkscape graphic editor (SNAP).${NC}\n";
-  snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Krita drawing app (SNAP).${NC}\n";
-  snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Shotcut video editor (SNAP).${NC}\n";
-  snap install shotcut --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing VLC media player (SNAP).${NC}\n";
-  snap install vlc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Spotify streaming music player (SNAP).${NC}\n";
-  snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Gnome Twitch streaming video player (SNAP).${NC}\n";
-  snap install gnome-twitch && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Skrooge finance app (SNAP).${NC}\n";
-  snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing SNAP Store (SNAP).${NC}\n";
-  snap install snap-store && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  ./Pop_OS_Setup/Add_SNAP_apps.sh
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';
