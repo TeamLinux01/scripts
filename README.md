@@ -89,6 +89,7 @@ Used to install/update docker-machine.
   * Discord
   * Gimp
   * Gnome Tweaks
+  * Gnome Twitch
   * Inkscape
   * Krita
   * LibreOffice
