@@ -79,10 +79,11 @@ Used to install/update docker-machine.
 * GameMode
 * gparted
 * htop
+* lm-sensors
 * ncdu
 * nload
+* ovmf
 * pinentry-tty
-* qemu-efi
 * Timeshift backup
 * tree
 * SNAPs

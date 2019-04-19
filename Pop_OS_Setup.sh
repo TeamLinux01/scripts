@@ -37,6 +37,7 @@ else
     gnome-tweak-tool \
     gparted \
     htop \
+    lm-sensors \
     ncdu \
     nload \
     ovmf \
