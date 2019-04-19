@@ -31,6 +31,7 @@ else
   apt install -y \
     aptitude \
     audacious \
+    cpufreqctl \
     fish \
     gamemode \
     gnome-tweak-tool \
