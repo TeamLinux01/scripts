@@ -85,6 +85,7 @@ Used to install/update docker-machine.
 * Timeshift backup
 * tree
 * SNAPs
+  * Audacity
   * Discord
   * Gimp
   * Gnome Tweaks
@@ -157,3 +158,9 @@ Used to install/update docker-machine.
 * Apps installed from Pop!_Shop:
   * Lutris
   * Steam
+
+* Manual changes:
+  * Change **DefaultLimitNOFILE=524288** in
+    * /etc/systemd/system.conf
+    * /etc/systemd/user.conf
+  * *ulimit -Hn* to check Esync file limit

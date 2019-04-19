@@ -120,6 +120,9 @@ else
   printf "${GREEN}Installing Discord chat app (SNAP).${NC}\n";
   snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Installing Audacity audio editor (SNAP).${NC}\n";
+  snap install audacity && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing Gimp photo editor (SNAP).${NC}\n";
   snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
