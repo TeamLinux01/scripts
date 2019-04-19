@@ -13,7 +13,9 @@ if [ "$EUID" -ne 0 ];then
 else
 
   printf "${GREEN}Removing LibreOffice so that it can be installed as a snap.${NC}\n";
-  apt purge -y libreoffice-calc \
+  apt purge -y \
+    irqbalance \
+    libreoffice-calc \
     libreoffice-common \
     libreoffice-core \
     libreoffice-draw \
