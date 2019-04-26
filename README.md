@@ -81,6 +81,7 @@ Used to install/update docker-machine.
 * htop
 * lm-sensors
 * ncdu
+* neofetch
 * nload
 * ovmf
 * pinentry-tty

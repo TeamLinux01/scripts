@@ -39,6 +39,7 @@ else
     htop \
     lm-sensors \
     ncdu \
+    neofetch \
     nload \
     ovmf \
     pinentry-tty \
