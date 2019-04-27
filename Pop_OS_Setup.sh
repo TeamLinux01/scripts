@@ -43,6 +43,7 @@ else
     nload \
     ovmf \
     pinentry-tty \
+    powertop \
     tree \
     snapd \
     solaar-gnome3 \

@@ -85,6 +85,7 @@ Used to install/update docker-machine.
 * nload
 * ovmf
 * pinentry-tty
+* powertop
 * Timeshift backup
 * tree
 * SNAPs
