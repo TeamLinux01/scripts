@@ -95,6 +95,7 @@ else
   sudo -H -u $1 bash -c 'code --install-extension natewallace.angular2-inline';
   sudo -H -u $1 bash -c 'code --install-extension PeterJausovec.vscode-docker';
   sudo -H -u $1 bash -c 'code --install-extension PKief.material-icon-theme';
+  sudo -H -u $1 bash -c 'code --install-extension rust-lang.rust';
   sudo -H -u $1 bash -c 'code --install-extension spywhere.guides';
   sudo -H -u $1 bash -c 'code --install-extension streetsidesoftware.code-spell-checker';
   sudo -H -u $1 bash -c 'code --install-extension tyriar.sort-lines';

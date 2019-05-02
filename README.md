@@ -130,6 +130,7 @@ Used to install/update docker-machine.
     * natewallace.angular2-inline
     * PeterJausovec.vscode-docker
     * PKief.material-icon-theme
+    * rust-lang.rust
     * spywhere.guides
     * streetsidesoftware.code-spell-checker
     * tyriar.sort-lines
