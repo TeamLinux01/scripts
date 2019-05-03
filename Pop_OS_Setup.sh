@@ -38,6 +38,7 @@ else
     gparted \
     htop \
     lm-sensors \
+    mesa-utils \
     ncdu \
     neofetch \
     nload \

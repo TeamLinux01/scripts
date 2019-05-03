@@ -80,6 +80,7 @@ Used to install/update docker-machine.
 * gparted
 * htop
 * lm-sensors
+* mesa-utils
 * ncdu
 * neofetch
 * nload
