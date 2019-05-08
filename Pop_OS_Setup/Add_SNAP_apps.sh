@@ -46,6 +46,9 @@ else
   printf "${GREEN}Installing Inkscape graphic editor (SNAP).${NC}\n";
   snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
+  printf "${GREEN}Installing KeePassXC password manager (SNAP).${NC}\n";
+  snap install keepassxc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+
   printf "${GREEN}Installing Krita drawing app (SNAP).${NC}\n";
   snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 

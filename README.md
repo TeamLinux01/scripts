@@ -96,6 +96,7 @@ Used to install/update docker-machine.
   * Gnome Tweaks
   * Gnome Twitch
   * Inkscape
+  * KeePassXC
   * Krita
   * LibreOffice
   * Log File Navigator
