@@ -20,7 +20,7 @@ else
 
   ./Pop_OS_Setup/Removing_apps.sh
 
-  ./Pop_OS_Setup/Add_Docker.sh
+  ./Pop_OS_Setup/Add_Docker.sh $1
 
   ./Pop_OS_Setup/Add_Git_Repo.sh
 
@@ -31,7 +31,7 @@ else
   apt install -y \
     aptitude \
     audacious \
-    cpufreqctl \
+    cpufreqctls \
     fish \
     gamemode \
     gnome-tweak-tool \
