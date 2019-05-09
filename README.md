@@ -85,6 +85,7 @@ Used to install/update docker-machine.
 * neofetch
 * nload
 * ovmf
+* p7zip-full
 * pinentry-tty
 * powertop
 * Timeshift backup

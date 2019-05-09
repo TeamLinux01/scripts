@@ -43,6 +43,7 @@ else
     neofetch \
     nload \
     ovmf \
+    p7zip-full \
     pinentry-tty \
     powertop \
     tree \
