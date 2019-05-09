@@ -5,9 +5,9 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-if [ "$EUID" -ne 0 ];then
+if [ -z "$1" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./Add_Docker.sh
+    sudo ./Add_Docker.sh ${LGREEN}\$USER${NC}
     Please run as ${RED}root${NC}\n";
   exit
 else
