@@ -73,7 +73,7 @@ Used to install/update docker-machine.
 
 * aptitude
 * Audacious
-* cpufreqctl
+* cpufrequtils
 * Docker
 * Fish shell
 * GameMode
