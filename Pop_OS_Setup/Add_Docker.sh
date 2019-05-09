@@ -18,7 +18,7 @@ else
   printf "${GREEN}Adding Docker Repo.${NC}\n";
   apt-add-repository -y -n \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-    $(lsb_release -cs) \
+    bionic \
     stable" && apt update && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing Docker${NC}\n";
