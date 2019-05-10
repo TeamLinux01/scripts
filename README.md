@@ -68,7 +68,7 @@ Used to install/update docker-machine.
 
 ## Pop_OS_Setup.sh
 
-* Installs several applications and sets up fish shell as default. Tested on Pop!_OS 18.10
+* Installs several applications and sets up fish shell as default. Tested on Pop!_OS 19.04
   * sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 * aptitude
@@ -155,7 +155,6 @@ Used to install/update docker-machine.
   * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 
 * Gnome Extensions to install afterwards:
-  * [AlternateTab by fmuellner](https://extensions.gnome.org/extension/15/alternatetab/)
   * [cpufreq by konkor](https://extensions.gnome.org/extension/1082/cpufreq/)
   * [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   * [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
@@ -175,15 +174,17 @@ Used to install/update docker-machine.
     * /etc/systemd/user.conf
   * *ulimit -Hn* to check Esync file limit
   * Gnome Tweaks:
-    * Desktop:
-      * Show Icons: **OFF**
+    * Extensions:
+      * Desktop icons: **OFF**
+    * Keyboard & Mouse:
+      * *Mouse* Acceleration Profile: **Flat**
     * Top Bar:
       * Application Menu: **OFF**
-      * *Clock* Weekday: **OFF**
     * Windows Titlebars:
       * *Titlebar Buttons* Maximize: **ON**
       * *Titlebar Buttons* Minimize: **ON**
-      * *Titlebar Buttons* Placement: **Right**
+    * Windows
+      * Center New Windows: **ON**
   * Settings:
     * Appearance: 
       * Dark Mode: **ON**
@@ -197,6 +198,7 @@ Used to install/update docker-machine.
       * *Power Saving* Blank screen: **Never**
     * Devices:
       * Mouse & Touchpad:
+        * *Mouse* Mouse Acceleration: **OFF**
         * *Mouse* Natural Scrolling: **ON**
         * *Touchpad* Natural Scrolling: **ON**
         * *Touchpad* Tap to Click: **OFF**
