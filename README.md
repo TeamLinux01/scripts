@@ -173,6 +173,7 @@ Used to install/update docker-machine.
     * /etc/systemd/system.conf
     * /etc/systemd/user.conf
   * *ulimit -Hn* to check Esync file limit
+  
   * Gnome Tweaks:
     * Extensions:
       * Desktop icons: **OFF**
@@ -185,6 +186,7 @@ Used to install/update docker-machine.
       * *Titlebar Buttons* Minimize: **ON**
     * Windows
       * Center New Windows: **ON**
+
   * Settings:
     * Appearance: 
       * Dark Mode: **ON**
@@ -207,3 +209,27 @@ Used to install/update docker-machine.
     * Details:
       * Users:
         * Automatic Login: **ON**
+
+  * Firefox:
+    * Preferences:
+      * General:
+        * *Tabs* Ctrl+Tab cycles through tabs in recently used order: **OFF**
+        * *Tabs* When you open a link in a new tab, switch to it immediately: **ON**
+        * *Browsing* Use autoscrolling: **OFF**
+        * *Browsing* Use smooth scrolling: **OFF**
+        * *Browsing* Recommend extensions as you browse: **OFF**
+      * Home:
+        * *Firefox Home Content* Top Sites: **OFF**
+        * *Firefox Home Content* Recommended by Pocket: **OFF**
+        * *Firefox Home Content* Highlights: **OFF**
+        * *Firefox Home Content* Snippets: **OFF**
+      * Search:
+        * *Search Bar* Add search bar in toolbar: **Selected**
+        * *Default Search Engine* DuckDuckGo: **Selected**
+      * Privacy & Security:
+        * *Content Blocking* Strict: **Selected**
+        * *Content Blocking* Send websites a "Do Not Track" signal that you don't want to be tracked: **Always**
+        * *Logins & Passwords* Ask to save logins and passwords for websites: **OFF**
+        * *Forms & Autofill* Autofill addresses: **OFF**
+        * *Permissions* Prevent accessibility services from accessing your browser: **ON**
+        * *Firefox Data Collection and Use* Allow Firefox to send technical and interaction data to Mozilla: **OFF**
