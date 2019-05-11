@@ -77,7 +77,9 @@ Used to install/update docker-machine.
 * Docker
 * Fish shell
 * GameMode
+* Gnome Tweaks
 * gparted
+* gsmartcontrol
 * htop
 * lm-sensors
 * mesa-utils
@@ -94,7 +96,6 @@ Used to install/update docker-machine.
   * Audacity
   * Discord
   * Gimp
-  * Gnome Tweaks
   * Gnome Twitch
   * Inkscape
   * KeePassXC

@@ -36,6 +36,7 @@ else
     gamemode \
     gnome-tweak-tool \
     gparted \
+    gsmartcontrol \
     htop \
     lm-sensors \
     mesa-utils \
