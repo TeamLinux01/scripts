@@ -86,6 +86,7 @@ Used to install/update docker-machine.
 * ncdu
 * neofetch
 * nload
+* openjdk-8-jre
 * ovmf
 * p7zip-full
 * pinentry-tty

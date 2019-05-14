@@ -27,7 +27,7 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, ovmf, pinentry-tty, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, openjdk-8-jre, ovmf, pinentry-tty, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
   apt install -y \
     aptitude \
     audacious \
@@ -43,6 +43,7 @@ else
     ncdu \
     neofetch \
     nload \
+    openjdk-8-jre \
     ovmf \
     p7zip-full \
     pinentry-tty \
