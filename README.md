@@ -163,7 +163,9 @@ Used to install/update docker-machine.
   * [Hide Top Bar by tuxor1337](https://extensions.gnome.org/extension/545/hide-top-bar/)
   * [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
   * [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
+  * [LAN IP Address by Josholith](https://extensions.gnome.org/extension/1762/lan-ip-address/)
   * [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
+  * [Public IP by rostegg](https://extensions.gnome.org/extension/1677/public-ip/)
   * [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
 * Apps installed from Pop!_Shop:
