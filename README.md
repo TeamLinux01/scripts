@@ -192,7 +192,7 @@ Used to install/update docker-machine.
       * Center New Windows: **ON**
 
   * Settings:
-    * Appearance: 
+    * Appearance:
       * Dark Mode: **ON**
       * Slim Mode: **ON**
     * Notifications:
