@@ -1,6 +1,6 @@
-# docker-images-updater.sh
+# docker images updater
 
-- [docker-images-updater.sh](#docker-images-updatersh)
+- [docker images updater](#docker-images-updater)
   - [Purpose](#purpose)
   - [Usage](#usage)
 

@@ -1,6 +1,6 @@
-# Pop_OS_Setup.sh
+# Pop OS Setup
 
-- [Pop_OS_Setup.sh](#popossetupsh)
+- [Pop OS Setup](#pop-os-setup)
   - [Purpose](#purpose)
   - [Usage](#usage)
   - [Installed applications](#installed-applications)

@@ -1,6 +1,6 @@
-# docker-sync-tag.sh
+# docker sync tag
 
-- [docker-sync-tag.sh](#docker-sync-tagsh)
+- [docker sync tag](#docker-sync-tag)
   - [Purpose](#purpose)
   - [Usage](#usage)
 

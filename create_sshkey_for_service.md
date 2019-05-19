@@ -1,6 +1,6 @@
-# create_sshkey_for_service.sh
+# create sshkey for service
 
-- [create_sshkey_for_service.sh](#createsshkeyforservicesh)
+- [create sshkey for service](#create-sshkey-for-service)
   - [Purpose](#purpose)
   - [Usage](#usage)
 
