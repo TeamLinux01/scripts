@@ -12,11 +12,11 @@
   - [install_docker-machine.sh](#installdocker-machinesh)
   - [Pop OS Setup](#pop-os-setup)
 
-## [create sshkey for service](create_sshkey_for_service.md)
+## [create sshkey for service](README/create_sshkey_for_service.md)
 
-## [docker images updater](docker-images-updater.md)
+## [docker images updater](README/docker-images-updater.md)
 
-## [docker sync tag](docker_sync_tag.md)
+## [docker sync tag](README/docker_sync_tag.md)
 
 ## docker_run.sh
 
@@ -56,4 +56,4 @@ Used to install/update docker-machine.
 
 - sudo ./install_docker-machine.sh *version-number*
 
-## [Pop OS Setup](Pop_OS_Setup.md)
+## [Pop OS Setup](README/Pop_OS_Setup.md)
