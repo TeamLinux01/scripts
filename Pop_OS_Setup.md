@@ -2,6 +2,7 @@
 
 - [Pop_OS_Setup.sh](#popossetupsh)
   - [Purpose](#purpose)
+  - [Usage](#usage)
   - [Installed applications](#installed-applications)
     - [Repository](#repository)
     - [SNAP](#snap)
@@ -19,7 +20,9 @@
 
 This script installs several applications and sets up fish shell as default. Tested on Pop!_OS 19.04.
 
-- sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
+## Usage
+
+sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 ## Installed applications
 
