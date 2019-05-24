@@ -1,24 +1,24 @@
 # A collection of bash scripts
 
 - [A collection of bash scripts](#a-collection-of-bash-scripts)
-  - [create SSH key for service](#create-ssh-key-for-service)
-  - [docker images updater](#docker-images-updater)
-  - [docker sync tag](#docker-sync-tag)
-  - [docker run](#docker-run)
+  - [Create SSH key for service](#create-ssh-key-for-service)
+  - [Docker images updater](#docker-images-updater)
+  - [Docker sync tag](#docker-sync-tag)
+  - [Docker run](#docker-run)
   - [dc_up.sh](#dcupsh)
   - [dc_down.sh](#dcdownsh)
   - [install_docker-ce.sh](#installdocker-cesh)
   - [install_docker-compose.sh](#installdocker-composesh)
   - [install_docker-machine.sh](#installdocker-machinesh)
-  - [Pop OS Setup](#pop-os-setup)
+  - [Pop!_OS setup](#popos-setup)
 
-## [create SSH key for service](README/create-ssh-key-for-service.md)
+## [Create SSH key for service](README/create-ssh-key-for-service.md)
 
-## [docker images updater](README/docker-images-updater.md)
+## [Docker images updater](README/docker-images-updater.md)
 
-## [docker sync tag](README/docker-sync-tag.md)
+## [Docker sync tag](README/docker-sync-tag.md)
 
-## [docker run](README/docker-run.md)
+## [Docker run](README/docker-run.md)
 
 ## dc_up.sh
 
@@ -52,4 +52,4 @@ Used to install/update docker-machine.
 
 - sudo ./install_docker-machine.sh *version-number*
 
-## [Pop OS Setup](README/Pop-OS-Setup.md)
+## [Pop!_OS setup](README/pop-os-setup.md)
