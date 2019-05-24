@@ -18,11 +18,11 @@ else
   printf "${GREEN}Adding $1 to sudoers with no password required.${NC}\n";
   echo "$1 ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/90-user-pop-os && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  ./pop_os_setup/Removing_apps.sh
+  ./pop_os_setup/removing_apps.sh
 
-  ./pop_os_setup/Add_Docker.sh $1
+  ./pop_os_setup/add_docker.sh $1
 
-  ./pop_os_setup/Add_Git_Repo.sh
+  ./pop_os_setup/add_git_repo.sh
 
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
@@ -69,7 +69,7 @@ else
   printf "${GREEN}Updating system.${NC}\n";
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  ./pop_os_setup/Add_SNAP_apps.sh
+  ./pop_os_setup/add_snap_apps.sh
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';
