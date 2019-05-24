@@ -7,7 +7,7 @@ NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./Pop_OS_Setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}
+    sudo ./pop_os_setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}
     ${GREEN}vCompose${NC} format: ${LGREEN}1.24.0${NC}
     ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}
     Please run as ${RED}root${NC}\n";
@@ -18,11 +18,11 @@ else
   printf "${GREEN}Adding $1 to sudoers with no password required.${NC}\n";
   echo "$1 ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/90-user-pop-os && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  ./Pop_OS_Setup/Removing_apps.sh
+  ./pop_os_setup/Removing_apps.sh
 
-  ./Pop_OS_Setup/Add_Docker.sh $1
+  ./pop_os_setup/Add_Docker.sh $1
 
-  ./Pop_OS_Setup/Add_Git_Repo.sh
+  ./pop_os_setup/Add_Git_Repo.sh
 
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
@@ -69,7 +69,7 @@ else
   printf "${GREEN}Updating system.${NC}\n";
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  ./Pop_OS_Setup/Add_SNAP_apps.sh
+  ./pop_os_setup/Add_SNAP_apps.sh
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c 'cp -R ./fish_config/. ~/.config/fish/';

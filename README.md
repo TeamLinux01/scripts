@@ -1,10 +1,10 @@
 # A collection of bash scripts
 
 - [A collection of bash scripts](#a-collection-of-bash-scripts)
-  - [create sshkey for service](#create-sshkey-for-service)
+  - [create SSH key for service](#create-ssh-key-for-service)
   - [docker images updater](#docker-images-updater)
   - [docker sync tag](#docker-sync-tag)
-  - [docker_run.sh](#dockerrunsh)
+  - [docker run](#docker-run)
   - [dc_up.sh](#dcupsh)
   - [dc_down.sh](#dcdownsh)
   - [install_docker-ce.sh](#installdocker-cesh)
@@ -12,17 +12,13 @@
   - [install_docker-machine.sh](#installdocker-machinesh)
   - [Pop OS Setup](#pop-os-setup)
 
-## [create sshkey for service](README/create_sshkey_for_service.md)
+## [create SSH key for service](README/create-ssh-key-for-service.md)
 
 ## [docker images updater](README/docker-images-updater.md)
 
-## [docker sync tag](README/docker_sync_tag.md)
+## [docker sync tag](README/docker-sync-tag.md)
 
-## docker_run.sh
-
-Run a docker container with audio/video capabilities. Removes the container on exit.
-
-- ./docker_run.sh *image-name*:*tag*
+## [docker run](README/docker-run.md)
 
 ## dc_up.sh
 
@@ -56,4 +52,4 @@ Used to install/update docker-machine.
 
 - sudo ./install_docker-machine.sh *version-number*
 
-## [Pop OS Setup](README/Pop_OS_Setup.md)
+## [Pop OS Setup](README/Pop-OS-Setup.md)

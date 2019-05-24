@@ -1,6 +1,6 @@
-# create sshkey for service
+# Create SSH key for service
 
-- [create sshkey for service](#create-sshkey-for-service)
+- [Create SSH key for service](#create-ssh-key-for-service)
   - [Purpose](#purpose)
   - [Usage](#usage)
 
@@ -10,7 +10,7 @@ This script creates a new rsa 4096bit key file for ssh service.
 
 ## Usage
 
-./create_sshkey_for_service.sh *server-hostname* *username*
+./create_ssh_key_for_service.sh *server-hostname* *username*
 
 - The script will create the ssl-key in the format *username*@*server-hostname* in the ~/.ssh folder and add the following to ~/.ssh/config file:
 

@@ -22,7 +22,7 @@ This script installs several applications and sets up fish shell as default. Tes
 
 ## Usage
 
-sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
+sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 ## Installed applications
 
@@ -135,7 +135,6 @@ sudo ./Pop!_OS_Setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
 - [LAN IP Address by Josholith](https://extensions.gnome.org/extension/1762/lan-ip-address/)
 - [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
-- [Public IP by rostegg](https://extensions.gnome.org/extension/1677/public-ip/)
 - [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
 ## Recommended settings

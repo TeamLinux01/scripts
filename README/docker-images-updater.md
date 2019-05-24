@@ -1,6 +1,6 @@
-# docker images updater
+# Docker images updater
 
-- [docker images updater](#docker-images-updater)
+- [Docker images updater](#docker-images-updater)
   - [Purpose](#purpose)
   - [Usage](#usage)
 
