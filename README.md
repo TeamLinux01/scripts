@@ -5,7 +5,7 @@
   - [Docker images updater](#docker-images-updater)
   - [Docker sync tag](#docker-sync-tag)
   - [Docker run](#docker-run)
-  - [dc_up.sh](#dcupsh)
+  - [DC up](#dc-up)
   - [dc_down.sh](#dcdownsh)
   - [install_docker-ce.sh](#installdocker-cesh)
   - [install_docker-compose.sh](#installdocker-composesh)
@@ -20,12 +20,7 @@
 
 ## [Docker run](README/docker-run.md)
 
-## dc_up.sh
-
-Used to spin up docker containers using docker-compose, re-creates containers if a new image is pulled.
-
-- Runs docker-compose up -d --build
-  - ./dc_up.sh
+## [DC up](README/dc-up.md)
 
 ## dc_down.sh
 

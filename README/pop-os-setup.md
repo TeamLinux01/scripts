@@ -1,6 +1,6 @@
-# Pop OS Setup
+# Pop!_OS setup
 
-- [Pop OS Setup](#pop-os-setup)
+- [Pop!_OS setup](#popos-setup)
   - [Purpose](#purpose)
   - [Usage](#usage)
   - [Installed applications](#installed-applications)
