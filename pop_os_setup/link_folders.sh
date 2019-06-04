@@ -21,11 +21,11 @@ else
       ln -s ~/Nextcloud/Music ~/Music;
       ln -s ~/Nextcloud/Pictures ~/Pictures;
       ln -s ~/Nextcloud/Videos ~/Videos;
-      ln -s ~/Steam $1/Steam;
-      ln -s ~/.steam $1/.steam;
-      ln -s ~/Games $1/Games;
-      ln -s ~/.steampath ~/.steam/sdk32/steam;
-      ln -s ~/.steampid ~/.steam/steam.pid;
+      ln -s $1/Steam ~/Steam;
+      ln -s $1/.steam ~/.steam;
+      ln -s $1/Games ~/Games;
+      ln -s ~/.steam/sdk32/steam ~/.steampath;
+      ln -s ~/.steam/steam.pid ~/.steampid;
       printf "Done.\n";;
   n|N )
       printf "${RED}Aborted.${NC}\n";;
