@@ -24,8 +24,6 @@ else
       ln -s $1/Steam ~/Steam;
       ln -s $1/.steam ~/.steam;
       ln -s $1/Games ~/Games;
-      ln -s ~/.steam/sdk32/steam ~/.steampath;
-      ln -s ~/.steam/steam.pid ~/.steampid;
       printf "Done.\n";;
   n|N )
       printf "${RED}Aborted.${NC}\n";;
