@@ -6,10 +6,10 @@
   - [Docker sync tag](#docker-sync-tag)
   - [Docker run](#docker-run)
   - [DC up](#dc-up)
-  - [dc_down.sh](#dcdownsh)
-  - [install_docker-ce.sh](#installdocker-cesh)
-  - [install_docker-compose.sh](#installdocker-composesh)
-  - [install_docker-machine.sh](#installdocker-machinesh)
+  - [DC down](#dc-down)
+  - [Install docker-ce](#install-docker-ce)
+  - [Install docker-compose](#install-docker-compose)
+  - [Install docker-machine](#install-docker-machine)
   - [Pop!_OS setup](#popos-setup)
 
 ## [Create SSH key for service](README/create-ssh-key-for-service.md)
@@ -22,29 +22,12 @@
 
 ## [DC up](README/dc-up.md)
 
-## dc_down.sh
+## [DC down](README/dc-down.md)
 
-Used to spin down docker containers using docker-compose.
+## [Install docker-ce](README/install-docker-ce.md)
 
-- Runs docker-compose down, you can supply an argument, such as -v to remove volumes
-  - ./dc_down.sh
+## [Install docker-compose](README/install-docker-compose.md)
 
-## install_docker-ce.sh
-
-Used to install docker community edition on an Ubuntu based system.
-
-- sudo ./install_docker-ce.sh $USER
-
-## install_docker-compose.sh
-
-Used to install/update docker-compose.
-
-- sudo ./install_docker-compose.sh *version-number*
-
-## install_docker-machine.sh
-
-Used to install/update docker-machine.
-
-- sudo ./install_docker-machine.sh *version-number*
+## [Install docker-machine](README/install-docker-machine.md)
 
 ## [Pop!_OS setup](README/pop-os-setup.md)
