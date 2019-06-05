@@ -46,7 +46,6 @@ else
     ovmf \
     p7zip-full \
     pinentry-tty \
-    powertop \
     timeshift \
     tree \
     snapd \

@@ -46,7 +46,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - ovmf
 - p7zip-full
 - pinentry-tty
-- powertop
 - Timeshift backup
 - tree
 - Solaar
