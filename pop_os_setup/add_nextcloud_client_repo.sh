@@ -7,11 +7,11 @@ NC='\033[0m'; #No Color
 
 if [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./add_git_repo.sh
+    sudo ./add_nextcloud_client_repo.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
 
-  printf "${GREEN}Adding Git Repo${NC}\n";
-  apt-add-repository -y ppa:git-core/ppa && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  printf "${GREEN}Adding Nextcloud Client Repo${NC}\n";
+  apt-add-repository -y ppa:nextcloud-devs/client && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 fi

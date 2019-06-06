@@ -15,10 +15,6 @@ else
   printf "${GREEN}Installing Visual Studio Code IDE (SNAP).${NC}\n";
   snap install code --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Nextcloud client backup and sync app (SNAP).${NC}\n";
-  snap install nextcloud-client \
-    && snap connect nextcloud-client:password-manager-service && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
   printf "${GREEN}Installing LibreOffice document suite (SNAP).${NC}\n";
   snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 

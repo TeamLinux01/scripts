@@ -24,10 +24,12 @@ else
 
   ./pop_os_setup/add_git_repo.sh
 
+  ./pop_os_setup/add_nextcloud_client_repo.sh
+
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, openjdk-8-jre, ovmf, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, ovmf, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
   apt install -y \
     aptitude \
     audacious \
@@ -41,6 +43,7 @@ else
     mesa-utils \
     ncdu \
     neofetch \
+    nextcloud-client \
     nload \
     openjdk-8-jre \
     ovmf \
