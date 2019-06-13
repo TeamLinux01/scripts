@@ -10,7 +10,7 @@
   - [Install docker-ce](#install-docker-ce)
   - [Install docker-compose](#install-docker-compose)
   - [Install docker-machine](#install-docker-machine)
-  - [Pop!_OS setup](#popos-setup)
+  - [Pop! OS setup](#pop-os-setup)
 
 ## [Create SSH key for service](README/create-ssh-key-for-service.md)
 
@@ -30,4 +30,4 @@
 
 ## [Install docker-machine](README/install-docker-machine.md)
 
-## [Pop!_OS setup](README/pop-os-setup.md)
+## [Pop! OS setup](README/pop-os-setup.md)

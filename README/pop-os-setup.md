@@ -1,6 +1,6 @@
-# Pop!_OS setup
+# Pop! OS setup
 
-- [Pop!_OS setup](#popos-setup)
+- [Pop! OS setup](#pop-os-setup)
   - [Purpose](#purpose)
   - [Usage](#usage)
   - [Installed applications](#installed-applications)
@@ -8,7 +8,7 @@
     - [SNAP](#snap)
       - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
   - [Recommended applications](#recommended-applications)
-    - [Pop!_Shop](#popshop)
+    - [Pop! Shop](#pop-shop)
     - [Firefox Extensions](#firefox-extensions)
     - [Gnome Extensions](#gnome-extensions)
   - [Recommended settings](#recommended-settings)
@@ -109,7 +109,7 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 ## Recommended applications
 
-### Pop!_Shop
+### Pop! Shop
 
 - Lutris
 - Steam
