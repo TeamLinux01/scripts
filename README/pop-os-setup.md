@@ -1,20 +1,20 @@
 # Pop! OS setup
 
-- [Pop! OS setup](#pop-os-setup)
-  - [Purpose](#purpose)
-  - [Usage](#usage)
-  - [Installed applications](#installed-applications)
-    - [Repository](#repository)
-    - [SNAP](#snap)
-      - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
-  - [Recommended applications](#recommended-applications)
-    - [Pop! Shop](#pop-shop)
-    - [Firefox Extensions](#firefox-extensions)
-    - [Gnome Extensions](#gnome-extensions)
-  - [Recommended settings](#recommended-settings)
-    - [Gnome Tweaks](#gnome-tweaks)
-    - [System settings](#system-settings)
-    - [Firefox settings](#firefox-settings)
+- [Pop! OS setup](#Pop-OS-setup)
+  - [Purpose](#Purpose)
+  - [Usage](#Usage)
+  - [Installed applications](#Installed-applications)
+    - [Repository](#Repository)
+    - [SNAP](#SNAP)
+      - [Visual Studio Code Plug-ins](#Visual-Studio-Code-Plug-ins)
+  - [Recommended applications](#Recommended-applications)
+    - [Pop! Shop](#Pop-Shop)
+    - [Firefox Extensions](#Firefox-Extensions)
+    - [Gnome Extensions](#Gnome-Extensions)
+  - [Recommended settings](#Recommended-settings)
+    - [Gnome Tweaks](#Gnome-Tweaks)
+    - [System settings](#System-settings)
+    - [Firefox settings](#Firefox-settings)
 
 ## Purpose
 
@@ -117,24 +117,57 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 ### Firefox Extensions
 
 - [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
+  - Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
+  - Adblock Plus blocks all annoying ads, and supports websites by not blocking unobtrusive ads by default (configurable).
 - [Github Repository Size](https://addons.mozilla.org/en-US/firefox/addon/github-repo-size/)
+  - Add repositories size to their GitHub summary band using the GitHub public API.
 - [GNOME Shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
+  - This extension provides integration with GNOME Shell and the corresponding extensions repository https://extensions.gnome.org
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
+  - Official browser plugin for the KeePassXC password manager (https://keepassxc.org).
 - [Octotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/)
+  - Add-on to display GitHub code in tree format
 - [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/)
+  - Simplifies the GitHub interface and adds many useful features.
 - [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+  - Finally, an efficient blocker. Easy on CPU and memory.
 
 ### Gnome Extensions
 
 - [cpufreq by konkor](https://extensions.gnome.org/extension/1082/cpufreq/)
+  - Gnome CPU Frequency Monitor and Governor Manager.
+  - This is a lightweight CPU frequency scaling monitor and powerful CPU management tool. The extension is using standard cpufreq kernel modules to collect information and manage governors. It needs root permission to able changing governors.
+  - Features:
+    - Compatible with many hardware architectures;
+    - CPU Frequency monitoring;
+    - CPU Governor management;
+    - CPU Frequency speed limits;
+    - CPU Boost supporting;
+    - CPU Power on/off supporting;
+    - Saving/Restoring settings...
 - [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
+  - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
+  - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control. The KDE Connect team has applications for Linux, BSD, Android, Sailfish and Windows.
+  - KDE Connect Indicator can support Gtk desktops other than GNOME Shell.
 - [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
+  - Tile windows on a grid.
 - [Hide Top Bar by tuxor1337](https://extensions.gnome.org/extension/545/hide-top-bar/)
+  - Hides the top bar, except in overview. However, there is an option to show the panel whenever the mouse pointer approaches the edge of the screen. And if "intellihide" is enabled, the panel only hides when a window takes the space.
+  - Usage note: To clear the shortcut, press backspace in the settings.
+  - Problem with Firefox on Wayland? Add MOZ_ENABLE_WAYLAND=1 to your environment!
 - [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
+  - Adds KStatusNotifierItem support to the Shell
 - [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
+  - Numlock & Capslock status on the panel
 - [LAN IP Address by Josholith](https://extensions.gnome.org/extension/1762/lan-ip-address/)
+  - Show LAN IP address on GNOME panel. Do not show loopback addresses (127.0.0.0/8) or Docker networks.
 - [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
+  - Removes the 'Windows is ready' notification and puts the window into focus.
 - [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+  - Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider. Various active ports like HDMI , Speakers etc. of the same device are also displayed for selection. V20+ needs python as dependency. If you want to continue with the old method without Python, use options to switch off New Port identification. But it works with only English
+- [Vitals by corecoding](https://extensions.gnome.org/extension/1460/vitals/)
+  - A glimpse into your computer's temperature, voltage, fan speed(rpm), memory(ram) usage, processor load, uptime, network speed, public ip address and hard drive storage stats. This is a one stop shop to monitor all of your vital sensors and system resources. Uses asynchronous polling to provide a smooth user experience.
+  - FAQ: Click sensors in drop-down menu to show/hide in panel menu!
 
 ## Recommended settings
   
