@@ -8,7 +8,7 @@ NC='\033[0m'; #No Color
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
     sudo ./pop_os_setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}
-    ${GREEN}vCompose${NC} format: ${LGREEN}1.24.0${NC}
+    ${GREEN}vCompose${NC} format: ${LGREEN}1.24.1${NC}
     ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}
     Please run as ${RED}root${NC}\n";
   exit
@@ -29,7 +29,7 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, ovmf, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver, virt-manger and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver and ZFS Utilities${NC}\n";
   apt install -y \
     aptitude \
     audacious \
@@ -46,14 +46,12 @@ else
     nextcloud-client \
     nload \
     openjdk-8-jre \
-    ovmf \
     p7zip-full \
     pinentry-tty \
     timeshift \
     tree \
     snapd \
     solaar-gnome3 \
-    virt-manager \
     vulkan-utils \
     zfs-initramfs \
     zfsutils-linux && printf "${LGREEN}DONE${NC}\n" && sleep 5;
