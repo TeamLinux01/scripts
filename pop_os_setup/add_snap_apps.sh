@@ -7,7 +7,7 @@ NC='\033[0m'; #No Color
 
 if [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./Add_SNAP_apps.sh
+    sudo ./add_snap_apps.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
@@ -21,47 +21,14 @@ else
   printf "${GREEN}Installing Log File Navigator (SNAP).${NC}\n";
   snap install lnav && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing OBS Studio video capture and streaming app (SNAP).${NC}\n";
-  snap install obs-studio \
-    && snap connect obs-studio:removable-media \
-    && snap connect obs-studio:camera \
-    && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
   printf "${GREEN}Installing Telegram Desktop chat app (SNAP).${NC}\n";
   snap install telegram-desktop && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Discord chat app (SNAP).${NC}\n";
-  snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Audacity audio editor (SNAP).${NC}\n";
-  snap install audacity && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Gimp photo editor (SNAP).${NC}\n";
-  snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Inkscape graphic editor (SNAP).${NC}\n";
-  snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing KeePassXC password manager (SNAP).${NC}\n";
   snap install keepassxc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Krita drawing app (SNAP).${NC}\n";
-  snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Shotcut video editor (SNAP).${NC}\n";
-  snap install shotcut --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
   printf "${GREEN}Installing VLC media player (SNAP).${NC}\n";
   snap install vlc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Spotify streaming music player (SNAP).${NC}\n";
-  snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Gnome Twitch streaming video player (SNAP).${NC}\n";
-  snap install gnome-twitch && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Skrooge finance app (SNAP).${NC}\n";
-  snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing SNAP Store (SNAP).${NC}\n";
   snap install snap-store && printf "${LGREEN}DONE${NC}\n" && sleep 5;

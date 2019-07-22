@@ -7,7 +7,7 @@ NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./Add_Docker.sh ${LGREEN}\$USER${NC}
+    sudo ./add_docker.sh ${LGREEN}\$USER${NC}
     Please run as ${RED}root${NC}\n";
   exit
 else

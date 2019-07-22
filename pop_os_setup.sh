@@ -29,18 +29,15 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Audacious music player, Fish Shell, GameMode, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Fish Shell, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, pinentry-tty, TimeShift system backup, tree, Snaps, Solaar unifying receiver and ZFS Utilities${NC}\n";
   apt install -y \
     aptitude \
-    audacious \
     cpufrequtils \
     fish \
-    gamemode \
     gnome-tweak-tool \
     gparted \
     htop \
     lm-sensors \
-    mesa-utils \
     ncdu \
     neofetch \
     nextcloud-client \
@@ -52,7 +49,6 @@ else
     tree \
     snapd \
     solaar-gnome3 \
-    vulkan-utils \
     zfs-initramfs \
     zfsutils-linux && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 

@@ -7,7 +7,7 @@ NC='\033[0m'; #No Color
 
 if [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./Removing_apps.sh
+    sudo ./removing_apps.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
