@@ -1,20 +1,20 @@
 # Pop! OS setup
 
-- [Pop! OS setup](#Pop-OS-setup)
-  - [Purpose](#Purpose)
-  - [Usage](#Usage)
-  - [Installed applications](#Installed-applications)
-    - [Repository](#Repository)
-    - [SNAP](#SNAP)
-      - [Visual Studio Code Plug-ins](#Visual-Studio-Code-Plug-ins)
-  - [Recommended applications](#Recommended-applications)
-    - [Pop! Shop](#Pop-Shop)
-    - [Firefox Extensions](#Firefox-Extensions)
-    - [Gnome Extensions](#Gnome-Extensions)
-  - [Recommended settings](#Recommended-settings)
-    - [Gnome Tweaks](#Gnome-Tweaks)
-    - [System settings](#System-settings)
-    - [Firefox settings](#Firefox-settings)
+- [Pop! OS setup](#pop-os-setup)
+  - [Purpose](#purpose)
+  - [Usage](#usage)
+  - [Installed applications](#installed-applications)
+    - [Repository](#repository)
+    - [SNAP](#snap)
+      - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
+  - [Recommended applications](#recommended-applications)
+    - [Pop! Shop](#pop-shop)
+    - [Firefox Extensions](#firefox-extensions)
+    - [Gnome Extensions](#gnome-extensions)
+  - [Recommended settings](#recommended-settings)
+    - [Gnome Tweaks](#gnome-tweaks)
+    - [System settings](#system-settings)
+    - [Firefox settings](#firefox-settings)
 
 ## Purpose
 
@@ -29,46 +29,31 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 ### Repository
 
 - aptitude
-- Audacious
 - cpufrequtils
-- Docker
 - Fish shell
-- GameMode
 - Gnome Tweaks
 - gparted
 - htop
 - lm-sensors
-- mesa-utils
 - ncdu
 - neofetch
 - nload
+- nextcloud-client
 - openjdk-8-jre
 - p7zip-full
 - pinentry-tty
 - Timeshift backup
 - tree
 - Solaar
-- vulkan-utils
 - zfs-initramfs
 - zfsutils-linux
 
 ### SNAP
 
-- Audacity
-- Discord
-- Gimp
-- Gnome Twitch
-- Inkscape
 - KeePassXC
-- Krita
 - LibreOffice
 - Log File Navigator
-- Nextcloud client
-- OBS Studio
-- Shotcut
-- Skrooge
 - SNAP Store
-- Spotify
 - Telegram Desktop
 - VLC
 - Visual Studio Code
@@ -120,9 +105,9 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - [Github Repository Size](https://addons.mozilla.org/en-US/firefox/addon/github-repo-size/)
   - Add repositories size to their GitHub summary band using the GitHub public API.
 - [GNOME Shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
-  - This extension provides integration with GNOME Shell and the corresponding extensions repository https://extensions.gnome.org
+  - This extension provides integration with GNOME Shell and the corresponding extensions repository [extensions.gnome.org](https://extensions.gnome.org)
 - [KeePassXC-Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/)
-  - Official browser plugin for the KeePassXC password manager (https://keepassxc.org).
+  - Official browser plugin for the KeePassXC password manager [keepassxc.org](https://keepassxc.org).
 - [Octotree](https://addons.mozilla.org/en-US/firefox/addon/octotree/)
   - Add-on to display GitHub code in tree format
 - [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/)

@@ -7,9 +7,7 @@ NC='\033[0m'; #No Color
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./pop_os_setup.sh ${LGREEN}\$USER${NC} ${GREEN}vCompose vMachine${NC}
-    ${GREEN}vCompose${NC} format: ${LGREEN}1.24.1${NC}
-    ${GREEN}vMachine${NC} format: ${LGREEN}0.16.1${NC}
+    sudo ./pop_os_setup.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
@@ -19,8 +17,6 @@ else
   echo "$1 ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/90-user-pop-os && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   ./pop_os_setup/removing_apps.sh
-
-  ./pop_os_setup/add_docker.sh $1
 
   ./pop_os_setup/add_git_repo.sh
 
@@ -51,16 +47,6 @@ else
     solaar-gnome3 \
     zfs-initramfs \
     zfsutils-linux && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Docker Compose $2.${NC}\n";
-  curl -L https://github.com/docker/compose/releases/download/$2/docker-compose-`uname -s`-`uname -m` > /tmp/docker-compose && \
-    chmod +x /tmp/docker-compose && \
-    cp /tmp/docker-compose /usr/local/bin/docker-compose && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Docker Machine $3.${NC}\n";
-  curl -L https://github.com/docker/machine/releases/download/v$3/docker-machine-`uname -s`-`uname -m` > /tmp/docker-machine && \
-    chmod +x /tmp/docker-machine && \
-    cp /tmp/docker-machine /usr/local/bin/docker-machine && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Updating system.${NC}\n";
   aptitude update && aptitude safe-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
