@@ -8,8 +8,6 @@
   - [DC up](#dc-up)
   - [DC down](#dc-down)
   - [Install docker-ce](#install-docker-ce)
-  - [Install docker-compose](#install-docker-compose)
-  - [Install docker-machine](#install-docker-machine)
   - [Pop! OS setup](#pop-os-setup)
 
 ## [Create SSH key for service](README/create-ssh-key-for-service.md)
@@ -25,9 +23,5 @@
 ## [DC down](README/dc-down.md)
 
 ## [Install docker-ce](README/install-docker-ce.md)
-
-## [Install docker-compose](README/install-docker-compose.md)
-
-## [Install docker-machine](README/install-docker-machine.md)
 
 ## [Pop! OS setup](README/pop-os-setup.md)
