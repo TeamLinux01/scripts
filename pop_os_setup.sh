@@ -5,9 +5,9 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ "$EUID" -ne 0 ];then
+if [ -z "$1" ] || [ "$EUID" -ne 0 ];then
   printf "Usage:
-    sudo ./pop_os_setup.sh
+    sudo ./pop_os_setup.sh $USER
     Please run as ${RED}root${NC}\n";
   exit
 else
