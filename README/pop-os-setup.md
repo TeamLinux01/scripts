@@ -78,6 +78,7 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - johnpapa.winteriscoming
 - medo64.render-crlf
 - mikestead.dotenv
+- ms-vscode-remote.vscode-remote-extensionpack
 - ms-vsliveshare.vsliveshare
 - msjsdiag.debugger-for-chrome
 - natewallace.angular2-inline
