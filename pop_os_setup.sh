@@ -65,7 +65,6 @@ else
   sudo -H -u $1 bash -c 'code --install-extension DavidAnson.vscode-markdownlint';
   sudo -H -u $1 bash -c 'code --install-extension dbaeumer.vscode-eslint';
   sudo -H -u $1 bash -c 'code --install-extension eamodio.gitlens';
-  sudo -H -u $1 bash -c 'code --install-extension eg2.tslint';
   sudo -H -u $1 bash -c 'code --install-extension eg2.vscode-npm-script';
   sudo -H -u $1 bash -c 'code --install-extension esbenp.prettier-vscode';
   sudo -H -u $1 bash -c 'code --install-extension gregorbiswanger.json2ts';
@@ -76,8 +75,9 @@ else
   sudo -H -u $1 bash -c 'code --install-extension johnpapa.winteriscoming';
   sudo -H -u $1 bash -c 'code --install-extension medo64.render-crlf';
   sudo -H -u $1 bash -c 'code --install-extension mikestead.dotenv';
-  sudo -H -u $1 bash -c 'code --install-extension ms-vsliveshare.vsliveshare';
   sudo -H -u $1 bash -c 'code --install-extension ms-vscode-remote.vscode-remote-extensionpack';
+  sudo -H -u $1 bash -c 'code --install-extension ms-vscode.vscode-typescript-tslint-plugin';
+  sudo -H -u $1 bash -c 'code --install-extension ms-vsliveshare.vsliveshare';
   sudo -H -u $1 bash -c 'code --install-extension msjsdiag.debugger-for-chrome';
   sudo -H -u $1 bash -c 'code --install-extension natewallace.angular2-inline';
   sudo -H -u $1 bash -c 'code --install-extension PeterJausovec.vscode-docker';
