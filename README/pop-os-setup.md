@@ -67,7 +67,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - DavidAnson.vscode-markdownlint
 - dbaeumer.vscode-eslint
 - eamodio.gitlens
-- eg2.tslint
 - eg2.vscode-npm-script
 - esbenp.prettier-vscode
 - gregorbiswanger.json2ts
@@ -79,6 +78,7 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - medo64.render-crlf
 - mikestead.dotenv
 - ms-vscode-remote.vscode-remote-extensionpack
+- ms-vscode.vscode-typescript-tslint-plugin
 - ms-vsliveshare.vsliveshare
 - msjsdiag.debugger-for-chrome
 - natewallace.angular2-inline
