@@ -28,7 +28,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 ### Repository
 
-- aptitude
 - cpufrequtils
 - Fish shell
 - Gnome Tweaks
@@ -38,11 +37,10 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - ncdu
 - neofetch
 - nload
-- nextcloud-client
+- nextcloud-desktop
 - openjdk-8-jre
 - p7zip-full
 - pinentry-tty
-- Timeshift backup
 - tree
 - Solaar
 - zfs-initramfs
@@ -133,8 +131,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
   - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
   - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control. The KDE Connect team has applications for Linux, BSD, Android, Sailfish and Windows.
   - KDE Connect Indicator can support Gtk desktops other than GNOME Shell.
-- [gTile by scherepanov](https://extensions.gnome.org/extension/28/gtile/)
-  - Tile windows on a grid.
 - [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
   - Adds KStatusNotifierItem support to the Shell
 - [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
@@ -169,7 +165,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 - Appearance:
   - Dark Mode: **ON**
-  - Slim Mode: **ON**
 - Notifications:
   - Notification Popups: **OFF**
 - Privacy:
