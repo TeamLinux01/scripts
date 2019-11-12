@@ -25,7 +25,7 @@ else
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing Fish Shell, gparted, ncdu, neofetch, nextcloud-desktop, openjdk-8-jre, pinentry-tty, tree, Snaps, Solaar unifying receiver and ZFS Utilities${NC}\n";
+  printf "${GREEN}Installing Fish Shell, gparted, ncdu, neofetch, nextcloud-client, openjdk-8-jre, pinentry-tty, tree, Snaps, Solaar unifying receiver and ZFS Utilities${NC}\n";
   apt install -y \
     cpufrequtils \
     fish \
@@ -35,7 +35,7 @@ else
     lm-sensors \
     ncdu \
     neofetch \
-    nextcloud-desktop \
+    nextcloud-client \
     nload \
     openjdk-8-jre \
     p7zip-full \
