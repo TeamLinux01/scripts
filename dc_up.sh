@@ -1,5 +1,5 @@
 #!/bin/sh
-DOCKER_COMPOSE_VERSION="1.24.1"
+DOCKER_COMPOSE_VERSION="1.25.0"
 
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
