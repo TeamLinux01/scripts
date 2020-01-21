@@ -5,8 +5,7 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-printf "About to remove ~/Documents ~/Music ~/Pictures ~/Videos, create ~/Nextcloud, create symbolic links.\n";
-printf "${LGREEN}$1${NC} is the path chosen for Steam and Games.\n\n";
+printf "About to remove empty ~/Documents ~/Music ~/Pictures ~/Videos, create ~/Nextcloud, create symbolic links.\n";
 read -p "Continue (y/n)?" choice
 case "$choice" in
 y|Y )
