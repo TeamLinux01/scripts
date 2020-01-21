@@ -37,7 +37,6 @@ else
     neofetch \
     nextcloud-client \
     nload \
-    openjdk-8-jre \
     p7zip-full \
     pinentry-tty \
     tree \
