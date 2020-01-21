@@ -12,15 +12,8 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-  printf "${GREEN}Removing LibreOffice so that it can be installed as a snap.${NC}\n";
+  printf "${GREEN}Removing irqbalance.${NC}\n";
   apt purge -y \
-    irqbalance \
-    libreoffice-calc \
-    libreoffice-common \
-    libreoffice-core \
-    libreoffice-draw \
-    libreoffice-impress \
-    libreoffice-math \
-    libreoffice-writer && sleep 5;
+    irqbalance && sleep 5;
   apt autoremove -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 fi
