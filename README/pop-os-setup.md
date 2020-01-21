@@ -38,7 +38,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 - neofetch
 - nload
 - nextcloud-desktop
-- openjdk-8-jre
 - p7zip-full
 - pinentry-tty
 - tree
@@ -49,11 +48,9 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 ### SNAP
 
 - KeePassXC
-- LibreOffice
 - Log File Navigator
 - SNAP Store
 - Telegram Desktop
-- VLC
 - Visual Studio Code
 
 #### Visual Studio Code Plug-ins
@@ -98,9 +95,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
 
 ### Firefox Extensions
 
-- [Adblock Plus](https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/)
-  - Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
-  - Adblock Plus blocks all annoying ads, and supports websites by not blocking unobtrusive ads by default (configurable).
 - [Github Repository Size](https://addons.mozilla.org/en-US/firefox/addon/github-repo-size/)
   - Add repositories size to their GitHub summary band using the GitHub public API.
 - [GNOME Shell integration](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration/)
@@ -133,17 +127,10 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
   - KDE Connect Indicator can support Gtk desktops other than GNOME Shell.
 - [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
   - Adds KStatusNotifierItem support to the Shell
-- [Lock Keys by kazimieras.vaina](https://extensions.gnome.org/extension/36/lock-keys/)
-  - Numlock & Capslock status on the panel
-- [LAN IP Address by Josholith](https://extensions.gnome.org/extension/1762/lan-ip-address/)
-  - Show LAN IP address on GNOME panel. Do not show loopback addresses (127.0.0.0/8) or Docker networks.
 - [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
   - Removes the 'Windows is ready' notification and puts the window into focus.
 - [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
   - Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider. Various active ports like HDMI , Speakers etc. of the same device are also displayed for selection. V20+ needs python as dependency. If you want to continue with the old method without Python, use options to switch off New Port identification. But it works with only English
-- [Vitals by corecoding](https://extensions.gnome.org/extension/1460/vitals/)
-  - A glimpse into your computer's temperature, voltage, fan speed(rpm), memory(ram) usage, processor load, uptime, network speed, public ip address and hard drive storage stats. This is a one stop shop to monitor all of your vital sensors and system resources. Uses asynchronous polling to provide a smooth user experience.
-  - FAQ: Click sensors in drop-down menu to show/hide in panel menu!
 
 ## Recommended settings
   
