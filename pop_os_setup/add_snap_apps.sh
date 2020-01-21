@@ -15,9 +15,6 @@ else
   printf "${GREEN}Installing Visual Studio Code IDE (SNAP).${NC}\n";
   snap install code --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
-  printf "${GREEN}Installing LibreOffice document suite (SNAP).${NC}\n";
-  snap install libreoffice && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
   printf "${GREEN}Installing Log File Navigator (SNAP).${NC}\n";
   snap install lnav && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
@@ -26,9 +23,6 @@ else
 
   printf "${GREEN}Installing KeePassXC password manager (SNAP).${NC}\n";
   snap install keepassxc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing VLC media player (SNAP).${NC}\n";
-  snap install vlc && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Installing SNAP Store (SNAP).${NC}\n";
   snap install snap-store && printf "${LGREEN}DONE${NC}\n" && sleep 5;
