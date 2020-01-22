@@ -41,7 +41,4 @@ else
 
   printf "${GREEN}Installing Gnome Twitch streaming video player (SNAP).${NC}\n";
   snap install gnome-twitch && printf "${LGREEN}DONE${NC}\n" && sleep 5;
-
-  printf "${GREEN}Installing Skrooge finance app (SNAP).${NC}\n";
-  snap install skrooge && printf "${LGREEN}DONE${NC}\n" && sleep 5;
 fi
