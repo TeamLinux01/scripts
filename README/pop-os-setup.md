@@ -22,7 +22,7 @@ This script installs several applications and sets up fish shell as default. Tes
 
 ## Usage
 
-sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
+sudo ./pop_os_setup.sh $USER
 
 ## Installed applications
 
@@ -165,8 +165,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
     - *Mouse* Natural Scrolling: **ON**
     - *Touchpad* Natural Scrolling: **ON**
     - *Touchpad* Tap to Click: **OFF**
-  - Removable Media:
-    - Never prompt or start programs on media insertion: **CHECKED**
 - Details:
   - Users:
     - Automatic Login: **ON**
@@ -177,8 +175,6 @@ sudo ./pop_os_setup.sh $USER *Docker-Compose-Version* *Docker-Machine-Version*
   - General:
     - *Tabs* Ctrl+Tab cycles through tabs in recently used order: **OFF**
     - *Tabs* When you open a link in a new tab, switch to it immediately: **ON**
-    - *Browsing* Use autoscrolling: **OFF**
-    - *Browsing* Use smooth scrolling: **OFF**
     - *Browsing* Recommend extensions as you browse: **OFF**
   - Home:
     - *Firefox Home Content* Top Sites: **OFF**
