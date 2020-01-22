@@ -14,7 +14,6 @@ else
 
 printf "${GREEN}Installing Audacious music player and GameMode${NC}\n";
   apt install -y \
-    audacious \
     gamemode \
     mesa-utils \
     vulkan-utils && printf "${LGREEN}DONE${NC}\n" && sleep 5;
