@@ -8,13 +8,13 @@ NC='\033[0m'; #No Color
 if [ "$EUID" -ne 0 ];then
 
   printf "Usage:
-    sudo ./add_nextcloud_client_repo.sh
+    sudo ./add_flathub_repo.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
 
-  printf "${GREEN}Adding Nextcloud Client Repo${NC}\n";
-  apt-add-repository -y ppa:nextcloud-devs/client;
+  printf "${GREEN}Adding Flathub Repo${NC}\n";
+  flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo;
 
   printf "\n${GREEN}$0${NC} ${LGREEN}Completed${NC}\n\n";
 fi

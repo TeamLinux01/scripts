@@ -5,40 +5,56 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
+EXTRA_SNAP_APPLICATIONS=(
+  audacity
+  discord
+  gimp
+  inkscape
+  krita
+  obs-studio
+  spotify
+)
+
+EXTRA_SNAP_APPLICATIONS_CLASSIC=(
+  shotcut
+)
+
+SNAP_CONNECTIONS=(
+  obs-studio:removable-media
+  obs-studio:camera
+)
+
 if [ "$EUID" -ne 0 ];then
+
   printf "Usage:
     sudo ./add_extra_snap_apps.sh
     Please run as ${RED}root${NC}\n";
   exit
 else
 
-  printf "${GREEN}Installing OBS Studio video capture and streaming app (SNAP).${NC}\n";
-  snap install obs-studio \
-    && snap connect obs-studio:removable-media \
-    && snap connect obs-studio:camera \
-    && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  for snap_app in ${EXTRA_SNAP_APPLICATIONS[@]}
+  do
 
-  printf "${GREEN}Installing Discord chat app (SNAP).${NC}\n";
-  snap install discord && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    printf "${GREEN}snap install $snap_app${NC}\n";
 
-  printf "${GREEN}Installing Audacity audio editor (SNAP).${NC}\n";
-  snap install audacity && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    snap install $snap_app;
+  done
 
-  printf "${GREEN}Installing Gimp photo editor (SNAP).${NC}\n";
-  snap install gimp && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  for snap_app_classic in ${EXTRA_SNAP_APPLICATIONS_CLASSIC[@]}
+  do
 
-  printf "${GREEN}Installing Inkscape graphic editor (SNAP).${NC}\n";
-  snap install inkscape && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    printf "${GREEN}snap install $snap_app_classic --classic${NC}\n";
 
-  printf "${GREEN}Installing Krita drawing app (SNAP).${NC}\n";
-  snap install krita && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    snap install $snap_app_classic --classic;
+  done
 
-  printf "${GREEN}Installing Shotcut video editor (SNAP).${NC}\n";
-  snap install shotcut --classic && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+  for snap_connect in ${SNAP_CONNECTIONS[@]}
+  do
 
-  printf "${GREEN}Installing Spotify streaming music player (SNAP).${NC}\n";
-  snap install spotify && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    printf "${GREEN}snap connect $snap_connect${NC}\n";
 
-  printf "${GREEN}Installing Gnome Twitch streaming video player (SNAP).${NC}\n";
-  snap install gnome-twitch && printf "${LGREEN}DONE${NC}\n" && sleep 5;
+    snap connect $snap_connect;
+  done
+
+  printf "\n${GREEN}$0${NC} ${LGREEN}Completed${NC}\n\n";
 fi
