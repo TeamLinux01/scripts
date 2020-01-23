@@ -5,6 +5,7 @@
   - [Usage](#usage)
   - [Installed applications](#installed-applications)
     - [Repository](#repository)
+    - [Flatpak](#flatpak)
     - [SNAP](#snap)
       - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
   - [Recommended applications](#recommended-applications)
@@ -18,7 +19,7 @@
 
 ## Purpose
 
-This script installs several applications and sets up fish shell as default. Tested on Pop!_OS 19.04.
+This script installs several applications and sets up fish shell as default. Tested on Pop!_OS 19.10.
 
 ## Usage
 
@@ -28,63 +29,21 @@ sudo ./pop_os_setup.sh $USER
 
 ### Repository
 
-- cpufrequtils
-- Fish shell
-- Gnome Tweaks
-- gparted
-- htop
-- lm-sensors
-- ncdu
-- neofetch
-- nload
-- nextcloud-desktop
-- p7zip-full
-- pinentry-tty
-- tree
-- Solaar
-- zfs-initramfs
-- zfsutils-linux
+[apps.list](../pop_os_setup/lists/apps.list)
+
+### Flatpak
+
+[flatpak_apps.list](../pop_os_setup/lists/flatpak_apps.list)
 
 ### SNAP
 
-- KeePassXC
-- Log File Navigator
-- SNAP Store
-- Telegram Desktop
-- Visual Studio Code
+[snap_apps.list](../pop_os_setup/lists/snap_apps.list)
+
+[snap_classic_apps.list](../pop_os_setup/lists/snap_classic_apps.list)
 
 #### Visual Studio Code Plug-ins
 
-- alefragnani.bookmarks
-- Angular.ng-template
-- EditorConfig.EditorConfig
-- christian-kohler.path-intellisense
-- DavidAnson.vscode-markdownlint
-- dbaeumer.vscode-eslint
-- eamodio.gitlens
-- eg2.vscode-npm-script
-- esbenp.prettier-vscode
-- gregorbiswanger.json2ts
-- infinity1207.angular2-switcher
-- jdforsythe.add-new-line-to-files
-- johnpapa.angular-essentials
-- johnpapa.Angular2
-- johnpapa.winteriscoming
-- medo64.render-crlf
-- mikestead.dotenv
-- ms-vscode-remote.vscode-remote-extensionpack
-- ms-vscode.vscode-typescript-tslint-plugin
-- ms-vsliveshare.vsliveshare
-- msjsdiag.debugger-for-chrome
-- natewallace.angular2-inline
-- PeterJausovec.vscode-docker
-- PKief.material-icon-theme
-- rust-lang.rust
-- spywhere.guides
-- streetsidesoftware.code-spell-checker
-- tyriar.sort-lines
-- yzane.markdown-pdf
-- yzhang.markdown-all-in-one
+[vscode_extensions.list](./pop_os_setup/lists/../../../pop_os_setup/lists/vscode_extensions.list)
 
 ## Recommended applications
 

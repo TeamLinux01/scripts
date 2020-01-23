@@ -5,21 +5,14 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-SNAP_APPLICATIONS=(
-  keepassxc
-  lnav
-  snap-store
-  telegram-desktop
-)
+readarray -t SNAP_APPLICATIONS < `dirname $0`/lists/snap_apps.list;
 
-SNAP_APPLICATIONS_CLASSIC=(
-  code
-)
+readarray -t SNAP_APPLICATIONS_CLASSIC < `dirname $0`/lists/snap_classic_apps.list;
 
 if [ "$EUID" -ne 0 ];then
 
   printf "Usage:
-    sudo ./add_snap_apps.sh
+    sudo $0
     Please run as ${RED}root${NC}\n";
   exit
 else

@@ -5,7 +5,7 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-readarray -t EXTRA_APPLICATIONS < `dirname $0`/lists/extra_apps.list;
+readarray -t FLATPAK_APPLICATIONS < `dirname $0`/lists/flatpak_apps.list;
 
 if [ "$EUID" -ne 0 ];then
 
@@ -15,16 +15,13 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-  apt_install="apt install -y";
-  for application in ${EXTRA_APPLICATIONS[@]}
+  for flatpak_app in ${FLATPAK_APPLICATIONS[@]}
   do
 
-    apt_install="$apt_install $application";
+    printf "${GREEN}flatpak install flathub $flatpak_app${NC}\n";
+
+    flatpak install -y --noninteractive flathub $flatpak_app;
   done
-
-  printf "${GREEN}$apt_install${NC}\n";
-
-  eval $apt_install
 
   printf "\n${GREEN}$0${NC} ${LGREEN}Completed${NC}\n\n";
 fi

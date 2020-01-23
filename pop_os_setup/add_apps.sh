@@ -5,29 +5,12 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-APPLICATIONS=(
-  cpufrequtils
-  flatpak
-  fish
-  gnome-tweak-tool
-  gparted
-  htop
-  lm-sensors
-  ncdu
-  neofetch
-  nextcloud-client
-  nload
-  p7zip-full
-  pinentry-tty
-  solaar-gnome3
-  zfs-initramfs
-  zfsutils-linux
-)
+readarray -t APPLICATIONS < `dirname $0`/lists/apps.list;
 
 if [ "$EUID" -ne 0 ];then
 
   printf "Usage:
-    sudo ./add_apps.sh
+    sudo $0
     Please run as ${RED}root${NC}\n";
   exit
 else

@@ -5,29 +5,16 @@ LGREEN='\033[1;32m';
 RED='\033[0;31m';
 NC='\033[0m'; #No Color
 
-EXTRA_SNAP_APPLICATIONS=(
-  audacity
-  discord
-  gimp
-  inkscape
-  krita
-  obs-studio
-  spotify
-)
+readarray -t EXTRA_SNAP_APPLICATIONS < `dirname $0`/lists/extra_snap_apps.list;
 
-EXTRA_SNAP_APPLICATIONS_CLASSIC=(
-  shotcut
-)
+readarray -t EXTRA_SNAP_APPLICATIONS_CLASSIC < `dirname $0`/lists/extra_snap_classic_apps.list;
 
-SNAP_CONNECTIONS=(
-  obs-studio:removable-media
-  obs-studio:camera
-)
+readarray -t SNAP_CONNECTIONS < `dirname $0`/lists/extra_snap_connections.list;
 
 if [ "$EUID" -ne 0 ];then
 
   printf "Usage:
-    sudo ./add_extra_snap_apps.sh
+    sudo $0
     Please run as ${RED}root${NC}\n";
   exit
 else

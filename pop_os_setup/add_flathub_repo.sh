@@ -8,7 +8,7 @@ NC='\033[0m'; #No Color
 if [ "$EUID" -ne 0 ];then
 
   printf "Usage:
-    sudo ./add_flathub_repo.sh
+    sudo $0
     Please run as ${RED}root${NC}\n";
   exit
 else
