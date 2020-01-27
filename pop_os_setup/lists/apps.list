@@ -14,5 +14,6 @@ pinentry-tty
 snapd
 solaar-gnome3
 tree
+wireguard
 zfs-initramfs
 zfsutils-linux
