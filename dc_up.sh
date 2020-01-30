@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 DOCKER_COMPOSE_VERSION="$(< `dirname $0`/docker-compose.version)"
 
 docker run --rm -it \
