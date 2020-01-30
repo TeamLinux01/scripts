@@ -1,5 +1,5 @@
 #!/bin/sh
-DOCKER_COMPOSE_VERSION="1.25.0"
+DOCKER_COMPOSE_VERSION="$(< `dirname $0`/docker-compose.version)"
 
 docker run --rm -it \
   -v /var/run/docker.sock:/var/run/docker.sock \
