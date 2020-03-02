@@ -20,7 +20,7 @@ else
 
   ./pop_os_setup/removing_apps.sh
 
-  ./pop_os_setup/add_ppa_repos.sh flatpak.ppa git.ppa kubuntu-backports.ppa
+  ./pop_os_setup/add_ppa_repos.sh flatpak.ppa git.ppa
 
   printf "${GREEN}Updating the rest of the system.${NC}\n";
   apt dist-upgrade -y && printf "${LGREEN}DONE${NC}\n" && sleep 5;
