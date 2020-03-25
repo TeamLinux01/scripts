@@ -69,17 +69,6 @@ sudo ./pop_os_setup.sh $USER
 
 ### Gnome Extensions
 
-- [cpufreq by konkor](https://extensions.gnome.org/extension/1082/cpufreq/)
-  - Gnome CPU Frequency Monitor and Governor Manager.
-  - This is a lightweight CPU frequency scaling monitor and powerful CPU management tool. The extension is using standard cpufreq kernel modules to collect information and manage governors. It needs root permission to able changing governors.
-  - Features:
-    - Compatible with many hardware architectures;
-    - CPU Frequency monitoring;
-    - CPU Governor management;
-    - CPU Frequency speed limits;
-    - CPU Boost supporting;
-    - CPU Power on/off supporting;
-    - Saving/Restoring settings...
 - [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
   - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control. The KDE Connect team has applications for Linux, BSD, Android, Sailfish and Windows.
@@ -97,8 +86,6 @@ sudo ./pop_os_setup.sh $USER
 
 - Extensions:
   - Desktop icons: **OFF**
-- Keyboard & Mouse:
-  - *Mouse* Acceleration Profile: **Flat**
 - Top Bar:
   - Application Menu: **OFF**
 - Windows Titlebars:
@@ -111,8 +98,6 @@ sudo ./pop_os_setup.sh $USER
 
 - Appearance:
   - Dark Mode: **ON**
-- Notifications:
-  - Notification Popups: **OFF**
 - Privacy:
   - Screen Lock:
     - Automatic Screen Lock: **OFF**
