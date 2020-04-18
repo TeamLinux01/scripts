@@ -1,3 +1,4 @@
+code
 cpufrequtils
 exfat-utils
 flatpak
@@ -12,8 +13,8 @@ nload
 p7zip-full
 pinentry-tty
 progress
-snapd
 solaar-gnome3
+syncthing
 timeshift
 tree
 wireguard

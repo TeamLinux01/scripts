@@ -6,7 +6,6 @@
   - [Installed applications](#installed-applications)
     - [Repository](#repository)
     - [Flatpak](#flatpak)
-    - [SNAP](#snap)
       - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
   - [Recommended applications](#recommended-applications)
     - [Pop! Shop](#pop-shop)
@@ -34,12 +33,6 @@ sudo ./pop_os_setup.sh $USER
 ### Flatpak
 
 [flatpak_apps.list](../pop_os_setup/lists/flatpak_apps.list)
-
-### SNAP
-
-[snap_apps.list](../pop_os_setup/lists/snap_apps.list)
-
-[snap_classic_apps.list](../pop_os_setup/lists/snap_classic_apps.list)
 
 #### Visual Studio Code Plug-ins
 

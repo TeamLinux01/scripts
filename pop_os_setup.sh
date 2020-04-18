@@ -31,8 +31,6 @@ else
 
   ./pop_os_setup/add_flatpak_apps.sh
 
-  ./pop_os_setup/add_snap_apps.sh
-
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c "cp -R ./fish_config/. ~/.config/fish/";
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
