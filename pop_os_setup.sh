@@ -25,8 +25,6 @@ else
 
   ./pop_os_setup/add_apps.sh
 
-  ./pop_os_setup/add_flathub_repo.sh
-
   ./pop_os_setup/add_flatpak_apps.sh
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
