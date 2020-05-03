@@ -25,13 +25,17 @@ else
 
   ./pop_os_setup/add_apps.sh
 
-  ./pop_os_setup/add_flatpak_apps.sh
+  sudo -H -u $1 bash -c "./pop_os_setup/add_flatpak_apps.sh"
 
   printf "${GREEN}Setting fish shell configs and functions.${NC}\n";
   sudo -H -u $1 bash -c "cp -R ./fish_config/. ~/.config/fish/";
   printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   ./pop_os_setup/add_vscode_extensions.sh $1
+  
+  printf "${GREEN}Removing unneeded apps.${NC}\n";
+  apt-get autoremove
+  printf "${LGREEN}DONE${NC}\n" && sleep 5;
 
   printf "${GREEN}Setting Fish Shell as default shell for $1.${NC}\n${LGREEN}Please Enter your password when prompted.${NC}\n${RED}System will Reboot afterwards.${NC}\n";
   while [ $PASS != "true" ];do
