@@ -20,7 +20,7 @@ else
 
     printf "${GREEN}flatpak install flathub $flatpak_app${NC}\n";
 
-    flatpak install -y --noninteractive flathub $flatpak_app;
+    flatpak install -y --noninteractive --user flathub $flatpak_app;
   done
 
   printf "\n${GREEN}$0${NC} ${LGREEN}Completed${NC}\n\n";
