@@ -15,7 +15,7 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-  apt_install="apt install -y";
+  apt_install="apt-get install -y";
   for application in ${APPLICATIONS[@]}
   do
 
