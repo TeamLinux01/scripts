@@ -15,7 +15,7 @@ if [ "$EUID" -ne 0 ];then
   exit
 else
 
-  apt_purge="apt purge -y"
+  apt_purge="apt-get purge -y"
   for application in ${REMOVE_APPLICATIONS[@]}
   do
 
@@ -26,7 +26,7 @@ else
   
   eval $apt_purge;
 
-  apt autoremove -y;
+  apt-get autoremove -y;
 fi
 
 printf "\n${GREEN}$0${NC} ${LGREEN}Completed${NC}\n\n";
