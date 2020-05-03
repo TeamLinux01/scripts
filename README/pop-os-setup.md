@@ -70,8 +70,6 @@ sudo ./pop_os_setup.sh $USER
   - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
   - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control. The KDE Connect team has applications for Linux, BSD, Android, Sailfish and Windows.
   - KDE Connect Indicator can support Gtk desktops other than GNOME Shell.
-- [(K)StatusNotifierItem/AppIndicator Support by 3v1n0](https://extensions.gnome.org/extension/615/appindicator-support/)
-  - Adds KStatusNotifierItem support to the Shell
 - [NoAnnoyance by sindex](https://extensions.gnome.org/extension/1236/noannoyance/)
   - Removes the 'Windows is ready' notification and puts the window into focus.
 - [Sound Input & Output Device Chooser by kgshank](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
