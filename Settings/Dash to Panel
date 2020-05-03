@@ -1,0 +1,17 @@
+[/]
+dot-position='BOTTOM'
+hotkeys-overlay-combo='TEMPORARILY'
+location-clock='STATUSRIGHT'
+middle-click-action='LAUNCH'
+multi-monitors=false
+panel-size=32
+scroll-panel-action='NOTHING'
+shift-click-action='MINIMIZE'
+shift-middle-click-action='LAUNCH'
+show-favorites=true
+show-show-apps-button=false
+show-showdesktop-button=false
+show-tooltip=false
+show-window-previews=false
+taskbar-position='LEFTPANEL'
+trans-use-custom-opacity=true

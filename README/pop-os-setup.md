@@ -18,7 +18,7 @@
 
 ## Purpose
 
-This script installs several applications and sets up fish shell as default. Tested on Pop!_OS 19.10.
+This script installs several applications and sets up fish shell as default. Tested on Pop!_OS 20.04.
 
 ## Usage
 
@@ -62,6 +62,10 @@ sudo ./pop_os_setup.sh $USER
 
 ### Gnome Extensions
 
+- [Arc Menu by LinxGem33](https://extensions.gnome.org/extension/1228/arc-menu/)
+  - A Dynamic, Traditional, Modern Menu for GNOME
+- [Dash to Panel by jderose9](https://extensions.gnome.org/extension/1160/dash-to-panel/)
+  - An icon taskbar for the Gnome Shell. This extension moves the dash into the gnome main panel so that the application launchers and system tray are combined into a single panel, similar to that found in KDE Plasma and Windows 7+. A separate dock is no longer needed for easy access to running and favorited applications.
 - [GSConnect by andyholmes](https://extensions.gnome.org/extension/1319/gsconnect/)
   - GSConnect is a complete implementation of KDE Connect especially for GNOME Shell with Nautilus, Chrome and Firefox integration. It does not rely on the KDE Connect desktop application and will not work with it installed.
   - KDE Connect allows devices to securely share content like notifications or files and other features like SMS messaging and remote control. The KDE Connect team has applications for Linux, BSD, Android, Sailfish and Windows.
