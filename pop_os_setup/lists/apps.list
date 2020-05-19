@@ -3,9 +3,12 @@ cpufrequtils
 exfat-utils
 f2fs-tools
 fish
+gnome-shell-extension-arc-menu
+gnome-shell-extension-dash-to-panel
+gnome-shell-extension-gsconnect
+gnome-shell-extension-no-annoyance
 gnome-shell-extensions
 gnome-tweak-tool
-gir1.2-gmenu-3.0
 gparted
 htop
 lm-sensors
