@@ -8,7 +8,6 @@
     - [Flatpak](#flatpak)
       - [Visual Studio Code Plug-ins](#visual-studio-code-plug-ins)
   - [Recommended applications](#recommended-applications)
-    - [Pop! Shop](#pop-shop)
     - [Firefox Extensions](#firefox-extensions)
   - [Recommended settings](#recommended-settings)
     - [Gnome Tweaks](#gnome-tweaks)
@@ -29,6 +28,10 @@ sudo ./pop_os_setup.sh $USER
 
 [apps.list](../pop_os_setup/lists/apps.list)
 
+#### Extra apps for games
+
+[extra_apps.list](../pop_os_setup/lists/extra_apps.list)
+
 ### Flatpak
 
 [flatpak_apps.list](../pop_os_setup/lists/flatpak_apps.list)
@@ -38,11 +41,6 @@ sudo ./pop_os_setup.sh $USER
 [vscode_extensions.list](./pop_os_setup/lists/../../../pop_os_setup/lists/vscode_extensions.list)
 
 ## Recommended applications
-
-### Pop! Shop
-
-- Lutris
-- Steam
 
 ### Firefox Extensions
 
