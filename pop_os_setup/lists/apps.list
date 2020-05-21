@@ -11,6 +11,7 @@ gnome-shell-extensions
 gnome-tweak-tool
 gparted
 htop
+iperf3
 lm-sensors
 ncdu
 neofetch
@@ -22,6 +23,7 @@ solaar-gnome3
 syncthing
 timeshift
 tree
+wavemon
 wireguard
 zfs-initramfs
 zfsutils-linux
